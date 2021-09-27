@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-  matrizA=
-  matrizB=
+  int matrizA[6][5]={{0,0,1,0,0},
+  int matrizB[6][5]={{
 }
