@@ -1,6 +1,21 @@
-#include <stdio.h>
+int usario();
 
-int main() {
-  int matrizA[6][5]=
-  int matrizB[6][5]=
+int main(){
+  int matrizA[6][5];
+  int matrizB[6][5];
+  int somaA=0, somaB=0;
+  int matrizUsuario[6][5];
+  matrizUsuario[6][5]=usuario();
+}
+
+int usuario(){
+  int i, j, matriz[6][5];
+  printf("WiSARD Original\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
+  for(i=0;i<6;i++) {
+    for(j=0;j<5;j++) {
+      printf("Digite a cor na linha %d e na coluna %d: ", i, j);
+      scanf("%d", &matriz[i][j]);
+    }
+  }
+  return matriz[6][5];
 }
