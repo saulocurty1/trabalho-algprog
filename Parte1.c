@@ -24,12 +24,12 @@ int main(){
   int matrizR[MAX_LINHAS][MAX_COLUNAS]={{1,1,1,1,0},{1,0,0,0,1},{1,1,1,1,0},{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1}};
   int matrizS[MAX_LINHAS][MAX_COLUNAS]={{0,1,1,1,1},{1,0,0,0,0},{0,1,1,1,0},{0,0,0,0,1},{0,0,0,0,1},{1,1,1,1,0}};
   int matrizT[MAX_LINHAS][MAX_COLUNAS]={{1,1,1,1,1},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0}};
-  int matrizU[MAX_LINHAS][MAX_COLUNAS]=
-  int matrizV[MAX_LINHAS][MAX_COLUNAS]=
-  int matrizW[MAX_LINHAS][MAX_COLUNAS]=
-  int matrizX[MAX_LINHAS][MAX_COLUNAS]=
-  int matrizY[MAX_LINHAS][MAX_COLUNAS]=
-  int matrizZ[MAX_LINHAS][MAX_COLUNAS]=
+  int matrizU[MAX_LINHAS][MAX_COLUNAS]={{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{0,1,1,1,0}};
+  int matrizV[MAX_LINHAS][MAX_COLUNAS]={{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{0,1,0,1,0},{0,1,0,1,0},{0,0,1,0,1}};
+  int matrizW[MAX_LINHAS][MAX_COLUNAS]={{1,0,0,0,1},{1,0,0,0,1},{1,0,1,0,1},{1,0,1,0,1},{1,0,1,0,1},{0,1,0,1,0}};
+  int matrizX[MAX_LINHAS][MAX_COLUNAS]={{1,0,0,0,1},{0,1,0,1,0},{0,0,1,0,0},{0,1,0,1,0},{1,0,0,0,1},{1,0,0,0,1}};
+  int matrizY[MAX_LINHAS][MAX_COLUNAS]={{1,0,0,0,1},{0,1,0,1,0},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0}};
+  int matrizZ[MAX_LINHAS][MAX_COLUNAS]={{1,1,1,1,1},{0,0,0,1,0},{0,0,1,0,0},{0,1,0,0,0},{1,0,0,0,0},{1,1,1,1,1}};
   int somaA=0, somaB=0, somaC=0, somaD=0, somaE=0;
   int i, j, matrizUsuario[MAX_LINHAS][MAX_COLUNAS];
   printf("WiSARD Original\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
