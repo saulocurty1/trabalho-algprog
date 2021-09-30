@@ -19,7 +19,7 @@ int main() {
   int matrizI3[MAX_LINHAS][MAX_COLUNAS]=
   int matrizI4[MAX_LINHAS][MAX_COLUNAS]=
   int matrizI5[MAX_LINHAS][MAX_COLUNAS]=
-  int matrizO1[MAX_LINHAS][MAX_COLUNAS]=
+  int matrizO1[MAX_LINHAS][MAX_COLUNAS]={{0,1,1,1,0},{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{0,1,1,1,0}};
   int matrizO2[MAX_LINHAS][MAX_COLUNAS]=
   int matrizO3[MAX_LINHAS][MAX_COLUNAS]=
   int matrizO4[MAX_LINHAS][MAX_COLUNAS]=
