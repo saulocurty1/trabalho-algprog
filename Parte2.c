@@ -29,4 +29,12 @@ int main() {
   int matrizU3[MAX_LINHAS][MAX_COLUNAS]=
   int matrizU4[MAX_LINHAS][MAX_COLUNAS]=
   int matrizU5[MAX_LINHAS][MAX_COLUNAS]=
+  int i, j, matrizUsuario[MAX_LINHAS][MAX_COLUNAS];
+  printf("WiSARD com Bleaching\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
+  for(i=0;i<MAX_LINHAS;i++) {
+    for(j=0;j<MAX_COLUNAS;j++) {
+      printf("Digite a cor do pixel na linha %d e na coluna %d: ", i, j);
+      scanf("%d", &matrizUsuario[i][j]);
+    }
+  }
 }
