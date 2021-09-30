@@ -4,7 +4,7 @@
 #define MAX_COLUNAS 5
 
 int main() {
-  int matrizA1[MAX_LINHAS][MAX_COLUNAS]=
+  int matrizA1[MAX_LINHAS][MAX_COLUNAS]={{0,1,1,1,0},{1,0,0,0,1},{1,0,0,0,1},{1,1,1,1,1},{1,0,0,0,1},{1,0,0,0,1}};
   int matrizA2[MAX_LINHAS][MAX_COLUNAS]=
   int matrizA3[MAX_LINHAS][MAX_COLUNAS]=
   int matrizA4[MAX_LINHAS][MAX_COLUNAS]=
