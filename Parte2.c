@@ -24,7 +24,7 @@ int main() {
   int matrizO3[MAX_LINHAS][MAX_COLUNAS]=
   int matrizO4[MAX_LINHAS][MAX_COLUNAS]=
   int matrizO5[MAX_LINHAS][MAX_COLUNAS]=
-  int matrizU1[MAX_LINHAS][MAX_COLUNAS]=
+  int matrizU1[MAX_LINHAS][MAX_COLUNAS]={{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{1,0,0,0,1},{0,1,1,1,0}};
   int matrizU2[MAX_LINHAS][MAX_COLUNAS]=
   int matrizU3[MAX_LINHAS][MAX_COLUNAS]=
   int matrizU4[MAX_LINHAS][MAX_COLUNAS]=
