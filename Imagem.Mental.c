@@ -44,9 +44,13 @@ int main() {
   printf("Imagens Mentais:\n\n");
   printf("Imagem Mental da letra A:\n\n");
   imagem_mental(matrizA1, matrizA2, matrizA3, matrizA4, matrizA5);
-  printf("Imagem Mental da letra E:\n\n");
-  printf("Imagem Mental da letra I:\n\n");
-  printf("Imagem Mental da letra O:\n\n");
-  printf("Imagem Mental da letra U:\n\n");
+  printf("\nImagem Mental da letra E:\n\n");
+  imagem_mental(matrizE1, matrizE2, matrizE3, matrizE4, matrizE5);
+  printf("\nImagem Mental da letra I:\n\n");
+  imagem_mental(matrizE1, matrizE2, matrizE3, matrizE4, matrizI5);
+  printf("\nImagem Mental da letra O:\n\n");
+  imagem_mental(matrizO1, matrizO2, matrizO3, matrizO4, matrizO5);
+  printf("\nImagem Mental da letra U:\n\n");
+  imagem_mental(matrizU1, matrizU2, matrizU3, matrizU4, matrizU5);
   return 0;
 }
