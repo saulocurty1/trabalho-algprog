@@ -3,7 +3,7 @@
 #define ML 6
 #define MC 5
 
-void imagem_mental() {
+void imagem_mental(in) {
   
 }
 int main() {
