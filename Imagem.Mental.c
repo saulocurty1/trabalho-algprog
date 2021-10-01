@@ -4,7 +4,7 @@
 #define MC 5
 
 
-void imagem_mental(int matriz1[ML][MC], int matriz2[ML][MC], int matriz3[ML][MC], int matriz4[ML][MC], int matriz5[ML][MC]) {
+void imagem_mental(int matriz1[][MC], int matriz2[][MC], int matriz3[][MC], int matriz4[][MC], int matriz5[][MC]) {
 
   int matrizP[ML][MC], i, j;
   for(i=0;i<ML;i++){for(j=0;j<MC;j++){matrizP[i][j]=matriz1[i][j]+matriz2[i][j]+matriz3[i][j]+matriz4[i][j]+matriz5[i][j];}}
