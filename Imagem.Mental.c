@@ -5,7 +5,7 @@
 
 void imagem_mental(int matriz1[ML][MC], int matriz2[ML][MC], int matriz3[ML][MC], int matriz4[ML][MC], int matriz5[ML][MC]) {
   int matrizP[ML][MC], i, j;
-  for(i=0;i<ML;i++){for(j=0;j<MC;j++){matrizP[i][j]=matriz1[i][j]+matriz2[i][j]+matriz3[i][j]+matriz4[i][j]matriz5[i][j];}}
+  for(i=0;i<ML;i++){for(j=0;j<MC;j++){matrizP[i][j]=matriz1[i][j]+matriz2[i][j]+matriz3[i][j]+matriz4[i][j]+matriz5[i][j];}}
   for(i=0;i<ML;i++){
     for(j=0;j<MC;j++){printf("%d", matrizP[i][j]);
     }
