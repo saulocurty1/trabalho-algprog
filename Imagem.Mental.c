@@ -3,9 +3,12 @@
 #define ML 6
 #define MC 5
 
-void imagem_mental(in) {
-  
+void imagem_mental(int matriz1[ML][MC], int matriz2[ML][MC], int matriz3[ML][MC], int matriz4[ML][MC], int matriz5[ML][MC],) {
+  int matrizP[ML][MC], i, j;
+  for(i=0;i<ML;i++){for(j=0;j<MC;j++){matriz[ML][MC]=0;}}
+  for(i=0;i<ML;i++){for(j=0
 }
+
 int main() {
   int matrizA1[ML][MC]={{0,1,1,1,0},{1,0,0,0,1},{1,0,0,0,1},{1,1,1,1,1},{1,0,0,0,1},{1,0,0,0,1}};
   int matrizA2[ML][MC]={{1,1,1,1,1},{1,0,0,0,1},{1,0,0,0,1},{1,1,1,1,1},{1,0,0,0,1},{1,0,0,0,1}};
