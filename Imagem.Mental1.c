@@ -41,8 +41,8 @@ int main() {
   int matrizU3[ML][MC]={{0,0,0,0,0},{0,1,0,1,0},{0,1,0,1,0},{0,1,0,1,0},{0,1,1,1,0},{0,0,0,0,0}};
   int matrizU4[ML][MC]={{0,0,0,0,0},{0,0,0,0,0},{0,1,0,1,0},{0,1,0,1,0},{0,1,0,1,0},{0,1,1,1,0}};
   int matrizU5[ML][MC]={{0,1,0,1,0},{0,1,0,1,0},{0,1,0,1,0},{0,1,1,1,0},{0,0,0,0,0},{0,0,0,0,0}};
-  printf("Imagens Mentais:\n\n");
-  printf("Imagem Mental da letra A:\n\n");
+  printf("Imagens Mentais:\n");
+  printf("\nImagem Mental da letra A:\n\n");
   imagem_mental(matrizA1, matrizA2, matrizA3, matrizA4, matrizA5);
   printf("\nImagem Mental da letra E:\n\n");
   imagem_mental(matrizE1, matrizE2, matrizE3, matrizE4, matrizE5);
