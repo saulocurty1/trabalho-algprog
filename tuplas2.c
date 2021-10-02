@@ -27,11 +27,11 @@ void gera_tuplas(int *vetor_tuplas){
     //Variaveis dummy
     int i,j,k,x,y,aux;
 
-    //Uma coordenada é formada por um valor de x e um valor de y
+    //Uma coordenada ï¿½ formada por um valor de x e um valor de y
     int coord_x_possiveis[30] = {0,0,0,0,0,1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,5,5,5,5,5};
     int coord_y_possiveis[30] = {0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,4,4,4,4};
 
-    //Embaralhando os vetores de coordenadas possíveis para selecionar aleatoriamente a posição dos vetores
+    //Embaralhando os vetores de coordenadas possï¿½veis para selecionar aleatoriamente a posiï¿½ï¿½o dos vetores
     embaralhar(coord_x_possiveis, 30);
     embaralhar(coord_y_possiveis, 30);
 
@@ -65,9 +65,9 @@ void gera_tuplas(int *vetor_tuplas){
         vetor_tuplas[i] = coordenadas[i];
 }
 
-
 void embaralhar(int *vet, int vetSize){
-	for (int i = 0; i < vetSize; i++)
+    int i;
+	for (i = 0; i < vetSize; i++)
 	{
 		int r = rand() % vetSize;
 		int temp = vet[i];
