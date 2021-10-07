@@ -31,7 +31,7 @@ int main(){
   int matrizY[ML][MC]={{1,0,0,0,1},{0,1,0,1,0},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0}};
   int matrizZ[ML][MC]={{1,1,1,1,1},{0,0,0,1,0},{0,0,1,0,0},{0,1,0,0,0},{1,0,0,0,0},{1,1,1,1,1}};
   int vetorSoma[26];
-  int i, j, matrizUsuario[ML][MC];
+  int i, j, matrizUsuario[ML][MC], resultado;
   printf("WiSARD Original\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
   for(i=0;i<ML;i++) {
     for(j=0;j<MC;j++) {
@@ -40,4 +40,31 @@ int main(){
     }
   }
   for(i=0;i<26;i++) {vetorSoma[i]=0;}
+  switch(resultado)
+    case 0: printf("\nResultado: A");
+    case 1: printf("\nResultado: B");
+    case 2: printf("\nResultado: C");
+    case 3: printf("\nResultado: D");
+    case 4: printf("\nResultado: E");
+    case 5: printf("\nResultado: F");
+    case 6: printf("\nResultado: G");
+    case 7: printf("\nResultado: H");
+    case 8: printf("\nResultado: I");
+    case 9: printf("\nResultado: J");
+    case 10: printf("\nResultado: K");
+    case 11: printf("\nResultado: L");
+    case 12: printf("\nResultado: M");
+    case 13: printf("\nResultado: N");
+    case 14: printf("\nResultado: O");
+    case 15: printf("\nResultado: P");
+    case 16: printf("\nResultado: Q");
+    case 17: printf("\nResultado: R");
+    case 18: printf("\nResultado: S");
+    case 19: printf("\nResultado: T");
+    case 20: printf("\nResultado: U");
+    case 21: printf("\nResultado: V");
+    case 22: printf("\nResultado: W");
+    case 23: printf("\nResultado: X");
+    case 24: printf("\nResultado: Y");
+    case 25: printf("\nResultado: Z");
 }
