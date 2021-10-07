@@ -40,7 +40,7 @@ int main(){
     }
   }
   for(i=0;i<26;i++) {vetorSoma[i]=0;}
-  switch(resultado)
+  switch(resultado) {
     case 0: printf("\nResultado: A");break;
     case 1: printf("\nResultado: B");break;
     case 2: printf("\nResultado: C");break;
@@ -68,4 +68,5 @@ int main(){
     case 24: printf("\nResultado: Y");break;
     case 25: printf("\nResultado: Z");break;
     default: printf("\nResultado indeterminado.");
+  }
 }
