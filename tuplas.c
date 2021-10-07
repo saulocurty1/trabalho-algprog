@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void embaralhar(); //Embaralha vetores
-void gera_tuplas(int *vetor_tuplas, int tamanho); //Recebe o vetor de tuplas vazio e o preenche
+void geraTuplas(int *vetorTuplas, int tamanho); //Recebe o vetor de tuplas vazio e o preenche
 
 int main(){
     //Variaveis globais
@@ -10,7 +10,7 @@ int main(){
 
     //Criando o VETOR de tuplas
     int tuplas[30];
-    gera_tuplas(tuplas, 30);
+    geraTuplas(tuplas, 30);
 
     //Printando o vetor de tuplas
     printf("\nAs posicoes das tuplas sao:\n");
@@ -18,7 +18,7 @@ int main(){
         printf("(%i, %i, %i)  ", tuplas[i],tuplas[i+1], tuplas[i+2]);
 }
 
-void gera_tuplas(int *vetor_tuplas, int tamanho){
+void geraTuplas(int *vetorTuplas, int tamanho){
     //Variaveis locais
     int i;
     
@@ -33,8 +33,7 @@ void gera_tuplas(int *vetor_tuplas, int tamanho){
 
     //Atribuindo os valores das coordenadas ao vetor de tuplas
     for(i=0; i<tamanho; i++)
-        vetor_tuplas[i] = coordenadas[i];
-
+        vetorTuplas[i] = coordenadas[i];
 }
 
 void embaralhar(int *vet, int vetSize){
