@@ -67,4 +67,5 @@ int main(){
     case 23: printf("\nResultado: X");
     case 24: printf("\nResultado: Y");
     case 25: printf("\nResultado: Z");
+    defalut: printf("\nResultado indeterminado.");
 }
