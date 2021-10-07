@@ -41,31 +41,31 @@ int main(){
   }
   for(i=0;i<26;i++) {vetorSoma[i]=0;}
   switch(resultado)
-    case 0: printf("\nResultado: A");
-    case 1: printf("\nResultado: B");
-    case 2: printf("\nResultado: C");
-    case 3: printf("\nResultado: D");
-    case 4: printf("\nResultado: E");
-    case 5: printf("\nResultado: F");
-    case 6: printf("\nResultado: G");
-    case 7: printf("\nResultado: H");
-    case 8: printf("\nResultado: I");
-    case 9: printf("\nResultado: J");
-    case 10: printf("\nResultado: K");
-    case 11: printf("\nResultado: L");
-    case 12: printf("\nResultado: M");
-    case 13: printf("\nResultado: N");
-    case 14: printf("\nResultado: O");
-    case 15: printf("\nResultado: P");
-    case 16: printf("\nResultado: Q");
-    case 17: printf("\nResultado: R");
-    case 18: printf("\nResultado: S");
-    case 19: printf("\nResultado: T");
-    case 20: printf("\nResultado: U");
-    case 21: printf("\nResultado: V");
-    case 22: printf("\nResultado: W");
-    case 23: printf("\nResultado: X");
-    case 24: printf("\nResultado: Y");
-    case 25: printf("\nResultado: Z");
+    case 0: printf("\nResultado: A");break;
+    case 1: printf("\nResultado: B");break;
+    case 2: printf("\nResultado: C");break;
+    case 3: printf("\nResultado: D");break;
+    case 4: printf("\nResultado: E");break;
+    case 5: printf("\nResultado: F");break;
+    case 6: printf("\nResultado: G");break;
+    case 7: printf("\nResultado: H");break;
+    case 8: printf("\nResultado: I");break;
+    case 9: printf("\nResultado: J");break;
+    case 10: printf("\nResultado: K");break;
+    case 11: printf("\nResultado: L");break;
+    case 12: printf("\nResultado: M");break;
+    case 13: printf("\nResultado: N");break;
+    case 14: printf("\nResultado: O");break;
+    case 15: printf("\nResultado: P");break;
+    case 16: printf("\nResultado: Q");break;
+    case 17: printf("\nResultado: R");break;
+    case 18: printf("\nResultado: S");break;
+    case 19: printf("\nResultado: T");break;
+    case 20: printf("\nResultado: U");break;
+    case 21: printf("\nResultado: V");break;
+    case 22: printf("\nResultado: W");break;
+    case 23: printf("\nResultado: X");break;
+    case 24: printf("\nResultado: Y");break;
+    case 25: printf("\nResultado: Z");break;
     defalut: printf("\nResultado indeterminado.");
 }
