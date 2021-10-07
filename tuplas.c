@@ -13,8 +13,9 @@ int main(){
     gera_tuplas(tuplas, 30);
 
     //Printando o vetor de tuplas
-    for(i=0; i<30; i++)
-        printf("%i ", tuplas[i]);
+    printf("\nAs posicoes das tuplas sao:\n");
+    for(i=0; i<30; i+=3)
+        printf("(%i, %i, %i)  ", tuplas[i],tuplas[i+1], tuplas[i+2]);
 }
 
 void gera_tuplas(int *vetor_tuplas, int tamanho){
