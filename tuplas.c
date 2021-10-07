@@ -4,6 +4,9 @@
 void embaralhar(); //Embaralha vetores
 void geraTuplas(int *vetorTuplas, int tamanho); //Recebe o vetor de tuplas vazio e o preenche
 
+//Compara o vetor de tuplas, com o vetor desejado e retorna um vetor de posição para os neurônios
+void posicaoNeuronios(int *vetorTuplas, int *vetorLetras, int *vetorPosicao, int tamanho); 
+
 int main(){
     //Variaveis globais
     int i;
@@ -45,3 +48,17 @@ void embaralhar(int *vet, int vetSize){
 		vet[i] = vet[r];
 		vet[r] = temp;
 }}
+
+void posicaoNeuronios(int *vetorTuplas, int *vetorLetras, int *vetorPosicao, int tamanho){
+    int i;
+
+    //Compara se a letra possui 0 ou 1 na posição da tupla e atribui o mesmo valor ao vetor de posições
+    for(i=0; i<tamanho; i++){
+        if(vetorLetras[vetorTuplas[i]] == 0){
+            vetorPosicao[i] = 0;
+        }
+        else{
+            vetorPosicao[i] = 1;
+        } 
+    }
+}
