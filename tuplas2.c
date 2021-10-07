@@ -10,6 +10,8 @@ int main(){
     //Criando o VETOR de tuplas
     int tuplas[60];
     gera_tuplas(tuplas);
+    for(i=0; i<60; i++)
+        printf("%i ", tuplas[i]);
 
     //somente *SE NECESSARIO* a matriz de tuplas
     int matriz_tuplas[10][3][2];
@@ -61,7 +63,7 @@ void gera_tuplas(int *vetor_tuplas){
     }}}}}
 
     //Criando o vetor de tuplas
-    for(i=0; i<10; i++)
+    for(i=0; i<60; i++)
         vetor_tuplas[i] = coordenadas[i];
 }
 
