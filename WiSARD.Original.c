@@ -30,8 +30,7 @@ int main(){
   int matrizX[ML][MC]={{1,0,0,0,1},{0,1,0,1,0},{0,0,1,0,0},{0,1,0,1,0},{1,0,0,0,1},{1,0,0,0,1}};
   int matrizY[ML][MC]={{1,0,0,0,1},{0,1,0,1,0},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0},{0,0,1,0,0}};
   int matrizZ[ML][MC]={{1,1,1,1,1},{0,0,0,1,0},{0,0,1,0,0},{0,1,0,0,0},{1,0,0,0,0},{1,1,1,1,1}};
-  int somaA=0, somaB=0, somaC=0, somaD=0, somaE=0, somaF=0, somaG=0, somaH=0, somaI=0, somaJ=0, somaK=0, somaL=0, somaM=0;
-  int somaN=0, somaO=0, somaP=0, somaQ=0, somaR=0, somaS=0, somaT=0, somaU=0, somaV=0, somaW=0, somaX=0, somaY=0, somaZ=0;
+  int vetorSoma[26];
   int i, j, matrizUsuario[ML][MC];
   printf("WiSARD Original\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
   for(i=0;i<ML;i++) {
@@ -40,4 +39,5 @@ int main(){
       scanf("%d", &matrizUsuario[i][j]);
     }
   }
+  for(i=0;i<26;i++) {vetorSoma[i]=0;}
 }
