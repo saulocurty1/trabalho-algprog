@@ -30,8 +30,8 @@ int main() {
   int matrizU5[MAX]={0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0};
   int i, j, matrizUsuario[MAX];
   printf("WiSARD com Bleaching\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
-  for(i=0;i<ML;i++) {
-    for(j=0;j<MC;j++) {
+  for(i=0;i<5;i++) {
+    for(j=0;j<6;j++) {
       printf("Digite a cor do pixel na linha %d e na coluna %d: ", i+1, j);
       scanf("%d", &matrizUsuario[j+i*5]);
     }
