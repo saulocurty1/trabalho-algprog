@@ -28,7 +28,9 @@ int main() {
   int matrizU3[MAX]={0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0};
   int matrizU4[MAX]={0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,1,1,0};
   int matrizU5[MAX]={0,1,0,1,0,0,1,0,1,0,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0};
+
   int i, j, matrizUsuario[MAX];
+  
   printf("WiSARD com Bleaching\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
   for(i=0;i<5;i++) {
     for(j=0;j<6;j++) {
