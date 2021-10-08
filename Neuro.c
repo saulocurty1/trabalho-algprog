@@ -46,19 +46,26 @@ void CriaDiscriminante(int *neuronio, int *tupla){
         neuronio[valor]++;
     }
 
-    for (int  i = 0; i < 30; i++)
-    {
-        printf("%d", neuronio[i]);
-    }
+    // for (int  i = 0; i < 30; i++)
+    // {
+    //     printf("%d", neuronio[i]);
+    // }
     
 }
 
 
 
 int main(){
+    int cont = 1;
     Zera(matrizA1);
-    CriaDiscriminante(matrizA1, neuB);
-    for(int i = 0; i < 30; i++){
+    CriaDiscriminante(neuB, matrizA1);
+    for(int i = 0; i < 80; i++){
+        
         printf("%d", neuB[i]);
+        cont++; 
+        if(cont % 8 == 0){
+            printf("\n");
+            cont = 0;
+        }
     }
 }
