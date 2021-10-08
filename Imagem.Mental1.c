@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
 
 #define ML 6
 #define MC 5
@@ -18,7 +16,6 @@ void imagem_mental(int matriz1[][MC], int matriz2[][MC], int matriz3[][MC], int 
 }
 
 int main() {
-  system("color 1F");
   int matrizA1[ML][MC]={{0,1,1,1,0},{1,0,0,0,1},{1,0,0,0,1},{1,1,1,1,1},{1,0,0,0,1},{1,0,0,0,1}};
   int matrizA2[ML][MC]={{1,1,1,1,1},{1,0,0,0,1},{1,0,0,0,1},{1,1,1,1,1},{1,0,0,0,1},{1,0,0,0,1}};
   int matrizA3[ML][MC]={{0,0,0,0,0},{0,1,1,1,0},{0,1,0,1,0},{0,1,1,1,0},{0,1,0,1,0},{0,1,0,1,0}};
