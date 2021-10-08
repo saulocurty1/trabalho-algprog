@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include<
 #define ML 6
 #define MC 5
+(“color XY”); 
 //Função que recebe 5 matrizes e e gera a imagem mental da soma delas
 void imagem_mental(int matriz1[][MC], int matriz2[][MC], int matriz3[][MC], int matriz4[][MC], int matriz5[][MC]) {
   int matrizP[ML][MC], i, j;
