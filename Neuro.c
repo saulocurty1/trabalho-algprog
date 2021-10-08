@@ -25,6 +25,13 @@ int neuU[30];
 int neuV[30];
 int neuX[30];
 int neuZ[30];
+int matrizA1[30]={0,1,1, 1,0,1, 0,0,0, 1,1,0, 0,0,1, 1,1,1, 1,1,1, 0,0,0, 1,1,0, 0,0,1};
+
+void Zera(int *ma){
+    for(int i=0; i< 30; i++){
+        ma[i] = 0;
+    }
+}
 
 void CriaDiscriminante(int *neuronio, int *tupla){
     int contador = 0;
@@ -49,5 +56,9 @@ void CriaDiscriminante(int *neuronio, int *tupla){
 
 
 int main(){
-
+    Zera(matrizA1);
+    CriaDiscriminante(matrizA1, neuB);
+    for(int i = 0; i < 30; i++){
+        printf("%d", neuB[i]);
+    }
 }
