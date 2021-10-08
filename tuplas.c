@@ -29,7 +29,6 @@ int main(){
     printf("\n\nOs valores correspondentes as posicoes das tuplas sao:\n");
     for(i=0; i<30; i+=3)
         printf("(%i, %i, %i)  ",posicoes[i],posicoes[i+1], posicoes[i+2]);
-
 }
 
 void geraTuplas(int *vetorTuplas, int tamanho){
