@@ -8,6 +8,9 @@ void geraTuplas(int *vetorTuplas, int tamanho); //Recebe o vetor de tuplas vazio
 void posicaoNeuronios(int *vetorTuplas, int *vetorLetras, int *vetorPosicao, int tamanho); 
 
 int main(){
+    //TESTANDO AS FUNÇÕES
+    int matrizA1[30]={0,1,1, 1,0,1, 0,0,0, 1,1,0, 0,0,1, 1,1,1, 1,1,1, 0,0,0, 1,1,0, 0,0,1};
+
     //Variaveis globais
     int i;
 
@@ -16,9 +19,17 @@ int main(){
     geraTuplas(tuplas, 30);
 
     //Printando o vetor de tuplas
-    printf("\nAs posicoes das tuplas sao:\n");
+    printf("\n\nAs posicoes das tuplas sao:\n");
     for(i=0; i<30; i+=3)
         printf("(%i, %i, %i)  ", tuplas[i],tuplas[i+1], tuplas[i+2]);
+
+    //Criando o vetor de posições
+    int posicoes[30];
+    posicaoNeuronios(tuplas, matrizA1, posicoes,30);
+    printf("\n\nOs valores correspondentes as posicoes das tuplas sao:\n");
+    for(i=0; i<30; i+=3)
+        printf("(%i, %i, %i)  ",posicoes[i],posicoes[i+1], posicoes[i+2]);
+
 }
 
 void geraTuplas(int *vetorTuplas, int tamanho){
