@@ -2,31 +2,42 @@
 #include <math.h>
 
 
-int neuA[30] = {0,1,1,1,0,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1};
-int neuB[30];
-int neuC[30];
-int neuD[30];
-int neuE[30];
-int neuF[30];
-int neuG[30];
-int neuH[30];
-int neuI[30];
-int neuJ[30];
-int neuL[30];
-int neuM[30];
-int neuN[30];
-int neuO[30];
-int neuP[30];
-int neuQ[30];
-int neuR[30];
-int neuS[30];
-int neuT[30];
-int neuU[30];
-int neuV[30];
-int neuX[30];
-int neuZ[30];
+typedef struct classes{
+    int neuro[80];
+    char nome[10];
+}classe;
 
-void CriaDiscriminante(int *neuronio, int *tupla){
+
+classe letraA;
+classe letraB;
+classe letraC;
+classe letraD;
+classe letraE;
+classe letraF;
+classe letraG;
+classe letraH;
+classe letraI;
+classe letraJ;
+classe letraK;
+classe letraL;
+classe letraM;
+classe letraN;
+classe letraO;
+classe letraP;
+classe letraQ;
+classe letraR;
+classe letraS;
+classe letraT;
+classe letraU;
+classe letraV;
+classe letraW;
+classe letraX;
+classe letraY;
+classe letraZ;
+
+
+
+void CriaDiscriminante(classe letra, int *tupla){
     int contador = 0;
     int a, b, c = 0;
     int valor = 0;
@@ -36,12 +47,12 @@ void CriaDiscriminante(int *neuronio, int *tupla){
         c = tupla[i + 2];
         valor  = (pow(2, 0) * a) + (pow(2, 1) * b) + (pow(2, 2) * c) + contador;  
         contador += 8;
-        neuronio[valor]++;
+        letra.neuro[valor]++;
     }
 
     for (int  i = 0; i < 30; i++)
     {
-        printf("%d", neuronio[i]);
+        printf("%d", letra.neuro[i]);
     }
     
 }
