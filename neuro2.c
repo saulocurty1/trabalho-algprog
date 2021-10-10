@@ -99,11 +99,9 @@ void compare (int neuronioletra[] ){
   vet[25]=comparadisc(neuronioletra,neuZ);
   
   int i=0, j,maior=vet[0],aux,letra=25,vencedora; //inicializo maior com o valor do vet na posição zero e assim posso apagar a comparação inicial dentro do for
-for (int i = 0; i <  26; ++i) {                
-//         if(i == 0){                            // **************** letra esta com o valor 25 que o ian pediu pra colocar ***********************************
-//             maior = vet[i]                     
-//             letra = i;
-//         }
+for (int i = 0; i <  26; ++i) {            
+ // **************** letra esta com o valor 25 que o ian pediu pra colocar ***********************************
+
         if(vet[i] > maior){
             maior = vet[i];
             letra  = i;
