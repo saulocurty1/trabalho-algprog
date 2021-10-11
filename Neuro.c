@@ -3,7 +3,7 @@
 
 
 int neuA[30] = {0,1,1,1,0,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1};
-int neuB[30];
+int neuB[80];
 int neuC[30];
 int neuD[30];
 int neuE[30];
@@ -41,8 +41,12 @@ void CriaDiscriminante(int *neuronio, int *tupla){
         a = tupla[i];
         b = tupla[i + 1];
         c = tupla[i + 2];
-        valor  = (pow(2, 0) * a) + (pow(2, 1) * b) + (pow(2, 2) * c) + contador;  
+        if(i == 0){
+            printf("a  = %d, b = %d, c = %d \n", a,b,c);
+        }
+        valor  = (pow(2, 0) * c) + (pow(2, 1) * b) + (pow(2, 2) * a) + contador;  
         contador += 8;
+        //printf("valor é = %d  quando i = %d", valor, i);
         neuronio[valor]++;
     }
 
@@ -56,8 +60,8 @@ void CriaDiscriminante(int *neuronio, int *tupla){
 
 
 int main(){
-    int cont = 1;
-    Zera(matrizA1);
+    int cont = 0;
+    Zera(neuB);
     CriaDiscriminante(neuB, matrizA1);
     for(int i = 0; i < 80; i++){
         
