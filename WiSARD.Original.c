@@ -35,8 +35,8 @@ int main(){
   int i, j, matrizUsuario[MAX], resultado;
   
   printf("WiSARD Original\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
-  for(i=0;i<5;i++) {
-    for(j=0;j<6;j++) {
+  for(i=0;i<6;i++) {
+    for(j=0;j<5;j++) {
       printf("Digite a cor do pixel na linha %d e na coluna %d: ", i+1, j+1);
       scanf("%d", &matrizUsuario[j+i*5]);
     }
