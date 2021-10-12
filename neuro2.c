@@ -60,7 +60,7 @@ int comparadisc(int neuroletra[], int neuroalfabeto[]){
   int i;
   int contadorigualdade=0;
   for(i=0;i<80;i++){
-    if(neuroletra[i]==1 && neuroalfabeto[i]==1){
+    if(neuroletra[i]>1 && neuroalfabeto[i]>1){
       contadorigualdade=contadorigualdade +1; 
       }
 
