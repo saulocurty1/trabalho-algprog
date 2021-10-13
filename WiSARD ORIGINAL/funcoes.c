@@ -1,32 +1,32 @@
 #include <stdio.h>
 #include <math.h>
 
-int neuA[80];
-int neuB[80];
-int neuC[80];
-int neuD[80];
-int neuE[80];
-int neuF[80];
-int neuG[80];
-int neuH[80];
-int neuI[80];
-int neuJ[80];
-int neuK[80];
-int neuL[80];
-int neuM[80];
-int neuN[80];
-int neuO[80];
-int neuP[80];
-int neuQ[80];
-int neuR[80];
-int neuS[80];
-int neuT[80];
-int neuU[80];
-int neuV[80];
-int neuW[80];
-int neuX[80];
-int neuY[80];
-int neuZ[80];
+    int classeA[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeB[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeC[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeD[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeE[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeF[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeG[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeH[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeI[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeJ[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeK[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeL[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeM[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeN[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeO[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeP[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeQ[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeR[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeS[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeT[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeU[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeV[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeW[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeX[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeY[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    int classeZ[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 void geraTuplas(int *vetorTuplas, int tamanho){
     //Variaveis locais
@@ -108,32 +108,32 @@ int comparadisc(int neuroletra[], int neuroalfabeto[]){
 void compare (int neuronioletra[]){
     //Comapra uma letra com todas da base de dados
   int vet[26];
-  vet[0]=comparadisc(neuronioletra,neuA);
-  vet[1]=comparadisc(neuronioletra,neuB);
-  vet[2]=comparadisc(neuronioletra,neuC);
-  vet[3]=comparadisc(neuronioletra,neuD);
-  vet[4]=comparadisc(neuronioletra,neuE);
-  vet[5]=comparadisc(neuronioletra,neuF);
-  vet[6]=comparadisc(neuronioletra,neuG);
-  vet[7]=comparadisc(neuronioletra,neuH);
-  vet[8]=comparadisc(neuronioletra,neuI);
-  vet[9]=comparadisc(neuronioletra,neuJ);
-  vet[10]=comparadisc(neuronioletra,neuK);
-  vet[11]=comparadisc(neuronioletra,neuL);
-  vet[12]=comparadisc(neuronioletra,neuM);
-  vet[13]=comparadisc(neuronioletra,neuN);
-  vet[14]=comparadisc(neuronioletra,neuO);
-  vet[15]=comparadisc(neuronioletra,neuP);
-  vet[16]=comparadisc(neuronioletra,neuQ);
-  vet[17]=comparadisc(neuronioletra,neuR);
-  vet[18]=comparadisc(neuronioletra,neuS);
-  vet[19]=comparadisc(neuronioletra,neuT);
-  vet[20]=comparadisc(neuronioletra,neuU);
-  vet[21]=comparadisc(neuronioletra,neuV);
-  vet[22]=comparadisc(neuronioletra,neuW);
-  vet[23]=comparadisc(neuronioletra,neuX);
-  vet[24]=comparadisc(neuronioletra,neuY);
-  vet[25]=comparadisc(neuronioletra,neuZ);
+  vet[0]=comparadisc(neuronioletra,classeA);
+  vet[1]=comparadisc(neuronioletra,classeB);
+  vet[2]=comparadisc(neuronioletra,classeC);
+  vet[3]=comparadisc(neuronioletra,classeD);
+  vet[4]=comparadisc(neuronioletra,classeE);
+  vet[5]=comparadisc(neuronioletra,classeF);
+  vet[6]=comparadisc(neuronioletra,classeG);
+  vet[7]=comparadisc(neuronioletra,classeH);
+  vet[8]=comparadisc(neuronioletra,classeI);
+  vet[9]=comparadisc(neuronioletra,classeJ);
+  vet[10]=comparadisc(neuronioletra,classeK);
+  vet[11]=comparadisc(neuronioletra,classeL);
+  vet[12]=comparadisc(neuronioletra,classeM);
+  vet[13]=comparadisc(neuronioletra,classeN);
+  vet[14]=comparadisc(neuronioletra,classeO);
+  vet[15]=comparadisc(neuronioletra,classeP);
+  vet[16]=comparadisc(neuronioletra,classeQ);
+  vet[17]=comparadisc(neuronioletra,classeR);
+  vet[18]=comparadisc(neuronioletra,classeS);
+  vet[19]=comparadisc(neuronioletra,classeT);
+  vet[20]=comparadisc(neuronioletra,classeU);
+  vet[21]=comparadisc(neuronioletra,classeV);
+  vet[22]=comparadisc(neuronioletra,classeW);
+  vet[23]=comparadisc(neuronioletra,classeX);
+  vet[24]=comparadisc(neuronioletra,classeY);
+  vet[25]=comparadisc(neuronioletra,classeZ);
   
   int i=0, j,maior=vet[0],aux,letra=25,vencedora; 
   //inicializo maior com o valor do vet na posição zero e assim posso apagar a comparação inicial dentro do for
