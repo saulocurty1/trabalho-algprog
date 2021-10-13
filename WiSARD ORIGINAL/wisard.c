@@ -140,7 +140,7 @@ int main(){
         }
     }
     //***
-
+    
     compare(discriminanteLetraUsuario, classeA, classeB, classeC, classeD,classeE, classeF, classeG, classeH, classeI, classeJ, classeK, classeL, classeM, classeN, classeO, classeP, classeQ, classeR, classeS, classeT, classeU, classeV, classeW, classeX, classeY, classeZ);
 
     return 0;

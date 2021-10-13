@@ -109,6 +109,10 @@ void compare (int neuronioletra[], int classeA, int classeB, int classeC, int cl
   vet[23]=comparadisc(neuronioletra,classeX);
   vet[24]=comparadisc(neuronioletra,classeY);
   vet[25]=comparadisc(neuronioletra,classeZ);
+
+  for(int i=0;i<26; i++){
+      printf("%d", vet[i]);
+  }
   
   int i=0, j,maior=vet[0],aux,letra=25,vencedora; 
   //inicializo maior com o valor do vet na posição zero e assim posso apagar a comparação inicial dentro do for
