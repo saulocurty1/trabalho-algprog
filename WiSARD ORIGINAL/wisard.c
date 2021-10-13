@@ -122,6 +122,69 @@ int main(){
     //Comparando a letra do usuário com as letras treinados e exibindo o resultado 
     compare(discriminanteLetraUsuario, classeA, classeB, classeC, classeD,classeE, classeF, classeG, classeH, classeI, classeJ, classeK, classeL, classeM, classeN, classeO, classeP, classeQ, classeR, classeS, classeT, classeU, classeV, classeW, classeX, classeY, classeZ);
 
+    int decisao;
+    printf("Caso queira visualizar a imagens mental da sua letra digite '1' ");
+    scanf("%i", &decisao);
+    if(decisao == 1)
+        exibirImagemMental(matrizUsuario);
+        
+    printf("Caso queira visualizar as imagens mentais das letras digite '2' ");
+    scanf("%i", &decisao);
+    if(decisao == 2){
+        printf("Mapa mental da Letra A:\n");
+        exibirImagemMental(matrizA);
+        printf("Mapa mental da Letra B:\n");
+        exibirImagemMental(matrizB);
+        printf("Mapa mental da Letra C:\n");
+        exibirImagemMental(matrizC);
+        printf("Mapa mental da Letra D:\n");
+        exibirImagemMental(matrizD);
+        printf("Mapa mental da Letra E:\n");
+        exibirImagemMental(matrizE);
+        printf("Mapa mental da Letra F:\n");
+        exibirImagemMental(matrizF);
+        printf("Mapa mental da Letra G:\n");
+        exibirImagemMental(matrizG);
+        printf("Mapa mental da Letra H:\n");
+        exibirImagemMental(matrizH);
+        printf("Mapa mental da Letra I:\n");
+        exibirImagemMental(matrizI);
+        printf("Mapa mental da Letra J:\n");
+        exibirImagemMental(matrizJ);
+        printf("Mapa mental da Letra K:\n");
+        exibirImagemMental(matrizK);
+        printf("Mapa mental da Letra L:\n");
+        exibirImagemMental(matrizL);
+        printf("Mapa mental da Letra M:\n");
+        exibirImagemMental(matrizM);
+        printf("Mapa mental da Letra N:\n");
+        exibirImagemMental(matrizN);
+        printf("Mapa mental da Letra O:\n");
+        exibirImagemMental(matrizO);
+        printf("Mapa mental da Letra P:\n");
+        exibirImagemMental(matrizP);
+        printf("Mapa mental da Letra Q:\n");
+        exibirImagemMental(matrizQ);
+        printf("Mapa mental da Letra R:\n");
+        exibirImagemMental(matrizR);
+        printf("Mapa mental da Letra S:\n");
+        exibirImagemMental(matrizS);
+        printf("Mapa mental da Letra T:\n");
+        exibirImagemMental(matrizT);
+        printf("Mapa mental da Letra U:\n");
+        exibirImagemMental(matrizU);
+        printf("Mapa mental da Letra V:\n");
+        exibirImagemMental(matrizV);
+        printf("Mapa mental da Letra W:\n");
+        exibirImagemMental(matrizW);
+        printf("Mapa mental da Letra X:\n");
+        exibirImagemMental(matrizX);
+        printf("Mapa mental da Letra Y:\n");
+        exibirImagemMental(matrizY);
+        printf("Mapa mental da Letra Z:\n");
+        exibirImagemMental(matrizZ);
+    }
+    
     return 0;
 }
 

@@ -136,3 +136,10 @@ void compare(int neuronioletra[], int classeA, int classeB, int classeC, int cla
         printf("\nNao foi possivel determinar a classe\n");
     }
 }
+
+void exibirImagemMental(int *letra){
+    int i;
+    for(i = 0; i<30; i+=5){
+        printf("%i %i %i %i %i\n",letra[i], letra[i+1], letra[i+2], letra[i+3],letra[i+4]);
+    }
+}
