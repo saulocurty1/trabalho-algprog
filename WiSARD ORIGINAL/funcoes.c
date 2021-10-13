@@ -78,14 +78,14 @@ void Zera(int *ma){
     }
 }
 
-void CriaDiscriminante(int *neuronio, int *tupla){
+void CriaDiscriminante(int *neuronio, int *posicoes){
     int contador = 0;
     int a, b, c = 0;
     int valor = 0;
     for(int i = 0; i < 30; i = i + 3){
-        a = tupla[i];
-        b = tupla[i + 1];
-        c = tupla[i + 2];
+        a = posicoes[i];
+        b = posicoes[i + 1];
+        c = posicoes[i + 2];
         //COnvertendo de binario pra decimal para pegar a posição do vetor
         valor  = (pow(2, 0) * c) + (pow(2, 1) * b) + (pow(2, 2) * a) + contador;  
         contador += 8;
