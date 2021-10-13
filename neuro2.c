@@ -2,7 +2,7 @@
 #include <math.h>
 int aa[80]={1,1,1,1,0,0,1,0,1,1};
 int bb[80]={1,0,1,0,1,1,1,1,0,1};
-int neuA[30] = {0,1,1,1,0,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1};
+int neuA[30];
 int neuB[30];
 int neuC[30];
 int neuD[30];
@@ -44,7 +44,7 @@ void CriaDiscriminante(int *neuronio, int *tupla){
         a = tupla[i];
         b = tupla[i + 1];
         c = tupla[i + 2];
-        valor  = (pow(2, 0) * a) + (pow(2, 1) * b) + (pow(2, 2) * c) + contador;  
+        valor  = (pow(2, 0) * c) + (pow(2, 1) * b) + (pow(2, 2) * a) + contador;  
         contador += 8;
         neuronio[valor]++;
     }

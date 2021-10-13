@@ -2,30 +2,29 @@
 #include <math.h>
 
 
-int neuA[30] = {0,1,1,1,0,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1};
+int neuA[80];
 int neuB[80];
-int neuC[30];
-int neuD[30];
-int neuE[30];
-int neuF[30];
-int neuG[30];
-int neuH[30];
-int neuI[30];
-int neuJ[30];
-int neuL[30];
-int neuM[30];
-int neuN[30];
-int neuO[30];
-int neuP[30];
-int neuQ[30];
-int neuR[30];
-int neuS[30];
-int neuT[30];
-int neuU[30];
-int neuV[30];
-int neuX[30];
-int neuZ[30];
-int matrizA1[30]={0,1,1, 1,0,1, 0,0,0, 1,1,0, 0,0,1, 1,1,1, 1,1,1, 0,0,0, 1,1,0, 0,0,1};
+int neuC[80];
+int neuD[80];
+int neuE[80];
+int neuF[80];
+int neuG[80];
+int neuH[80];
+int neuI[80];
+int neuJ[80];
+int neuL[80];
+int neuM[80];
+int neuN[80];
+int neuO[80];
+int neuP[80];
+int neuQ[80];
+int neuR[80];
+int neuS[80];
+int neuT[80];
+int neuU[80];
+int neuV[80];
+int neuX[80];
+int neuZ[80];
 
 void Zera(int *ma){
     for(int i=0; i< 30; i++){
