@@ -257,8 +257,20 @@ int main(){
                         CriaDiscriminante(classeO, posicoes);
                         printf("\nNovo discriminante da letra O:\n");
                         exibeDiscriminante(classeO);}
-                    }}
+                    }
+                }
                 
+
+
+
+
+
+
+
+
+
+
+
 
     if(menu == 2){//Mapas mentais da base de dados
         printf("Mapa mental da Letra A:\n");
@@ -317,21 +329,6 @@ int main(){
 
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //Função para criar os discriminantes de todas as letras
 void criaTodosDiscriminantes(int *tuplas){

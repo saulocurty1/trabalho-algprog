@@ -1,7 +1,16 @@
 #include <stdio.h>
 #include <math.h>
 
-    
+
+void embaralhar(int *vet, int vetSize){
+    int i;
+	for (i = 0; i < vetSize; i++)
+	{
+		int r = rand() % vetSize;
+		int temp = vet[i];
+		vet[i] = vet[r];
+		vet[r] = temp;
+}}
 
 void geraTuplas(int *vetorTuplas, int tamanho){
     //Variaveis locais
@@ -21,15 +30,7 @@ void geraTuplas(int *vetorTuplas, int tamanho){
         vetorTuplas[i] = coordenadas[i];
 }
 
-void embaralhar(int *vet, int vetSize){
-    int i;
-	for (i = 0; i < vetSize; i++)
-	{
-		int r = rand() % vetSize;
-		int temp = vet[i];
-		vet[i] = vet[r];
-		vet[r] = temp;
-}}
+
 
 void posicaoNeuronios(int *vetorTuplas, int *vetorLetras, int *vetorPosicao, int tamanho){
     int i;
