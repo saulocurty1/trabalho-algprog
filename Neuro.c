@@ -26,6 +26,8 @@ int neuV[80];
 int neuX[80];
 int neuZ[80];
 
+int matrizA1[30];
+
 void Zera(int *ma){
     for(int i=0; i< 30; i++){
         ma[i] = 0;
