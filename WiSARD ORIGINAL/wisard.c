@@ -89,158 +89,164 @@
 
 int main(){
     int i, j;
-    int testar;
-
-    //Criando as tuplas
-    int tuplas[30];
-    geraTuplas(tuplas, 30);
-    printf("Caso queira visualizar a ordem das coordenadas selecionadas para a formacao das tuplas digite '1'. ");
-    scanf("%i", &testar);
-    if(testar == 1){
-        for(i=0; i<30; i+=3){
-            printf("(%i, %i, %i) ", tuplas[i], tuplas[i+1], tuplas[i+2]);}}
-
-    //Recebendo a matriz do usuário para a prosseguimento da classificação
+    int testar, menu;
     int matrizUsuario[MAX];
-    printf("WiSARD Original\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
-    for(i=0;i<6;i++) {
-        for(j=0;j<5;j++) {
-        printf("Digite a cor do pixel na linha %d e na coluna %d: ", i+1, j+1);
-        scanf("%d", &matrizUsuario[j+i*5]);
-        }
-    }
 
-    //Posicionando os neurônios, para isso cria-se um vetor de posições vazio
-    int posicoes[30];
-    //Atribuindo valores binários as posições das tuplas da letra do usuário
-    posicaoNeuronios(tuplas, matrizUsuario, posicoes, 30);
-    printf("Caso queira visualizar os valores binarios atribuidos as tuplas digite '1'. ");
-    scanf("%i", &testar);
-    if(testar == 1){
-        for(i=0; i<30; i+=3){
-            printf("(%i, %i, %i) ", posicoes[i], posicoes[i+1], posicoes[i+2]);}}
-
-
-    //Criando o discriminante das letras da base de dados
-    criaTodosDiscriminantes(tuplas);
-    printf("Caso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa 500 linhas. ");
-    scanf("%i", &testar);
-    if(testar == 1){
-        printf("Discriminante da classe A:\n");
-        exibeDiscriminante(classeA);
-        printf("Discriminante da classe B:\n");
-        exibeDiscriminante(classeB);
-        printf("Discriminante da classe C:\n");
-        exibeDiscriminante(classeC);
-        printf("Discriminante da classe D:\n");
-        exibeDiscriminante(classeD);
-        printf("Discriminante da classe E:\n");
-        exibeDiscriminante(classeE);
-        printf("Discriminante da classe F:\n");
-        exibeDiscriminante(classeF);
-        printf("Discriminante da classe G:\n");
-        exibeDiscriminante(classeG);
-        printf("Discriminante da classe H:\n");
-        exibeDiscriminante(classeH);
-        printf("Discriminante da classe I:\n");
-        exibeDiscriminante(classeI);
-        printf("Discriminante da classe J:\n");
-        exibeDiscriminante(classeJ);
-        printf("Discriminante da classe K:\n");
-        exibeDiscriminante(classeK);
-        printf("Discriminante da classe L:\n");
-        exibeDiscriminante(classeL);
-        printf("Discriminante da classe M:\n");
-        exibeDiscriminante(classeM);
-        printf("Discriminante da classe N:\n");
-        exibeDiscriminante(classeN);
-        printf("Discriminante da classe O:\n");
-        exibeDiscriminante(classeO);
-        printf("Discriminante da classe P:\n");
-        exibeDiscriminante(classeP);
-        printf("Discriminante da classe Q:\n");
-        exibeDiscriminante(classeQ);
-        printf("Discriminante da classe R:\n");
-        exibeDiscriminante(classeR);
-        printf("Discriminante da classe S:\n");
-        exibeDiscriminante(classeS);
-        printf("Discriminante da classe T:\n");
-        exibeDiscriminante(classeT);
-        printf("Discriminante da classe U:\n");
-        exibeDiscriminante(classeU);
-        printf("Discriminante da classe V:\n");
-        exibeDiscriminante(classeV);
-        printf("Discriminante da classe W:\n");
-        exibeDiscriminante(classeW);
-        printf("Discriminante da classe X:\n");
-        exibeDiscriminante(classeX);
-        printf("Discriminante da classe Y:\n");
-        exibeDiscriminante(classeY);
-        printf("Discriminante da classe Z:\n");
-        exibeDiscriminante(classeZ);
-    }
-
-
-    //Criando o discriminante da letra do usuário
-    int discriminanteLetraUsuario[80];
-    //Limpando a memória
-    Zera(discriminanteLetraUsuario);
-    printf("Caso queira conferir se o discriminante foi realmente zerado digite 1. ");
-    scanf("%i", &testar);
-    if(testar == 1){
-        printf("Discriminante zerado:\n");
-        exibeDiscriminante(discriminanteLetraUsuario);}
-
-    //Propriamente criando a discriminante do usuario
-    CriaDiscriminante(discriminanteLetraUsuario, posicoes);
-    printf("Caso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
-    scanf("%i", &testar);
-    if(testar == 1){
-        printf("Discriminante do usuario:\n");
-        exibeDiscriminante(discriminanteLetraUsuario);}
-
-    //Comparando a letra do usuário com as letras treinados e exibindo o resultado 
-    compare(discriminanteLetraUsuario, classeA, classeB, classeC, classeD,classeE, classeF, classeG, classeH, classeI, classeJ, classeK, classeL, classeM, classeN, classeO, classeP, classeQ, classeR, classeS, classeT, classeU, classeV, classeW, classeX, classeY, classeZ);
-    printf("Caso queira visualizar o valor de igualdade entre a letra digitada e cada uma das letras possiveis digite 1. ");
-    scanf("%i", &testar);
+    printf("***Bem-vindo(a) a WiSARD!***\n");
+    printf("Digite o numero correspondente a funcao desejada\nPara classificar uma letra[1]\nVisualizar as imagens mentais da base de dados[2]\n");
+    printf("Para sair da WiSARD[9] - [AVISO] Todo o progresso sera perdido\n");
+    scanf("%i", &menu);
+    while(menu != 9){
+    if(menu == 1){ //CLASSIFICAR UMA LETRA
+        //Criando as tuplas
+        int tuplas[30];
+        geraTuplas(tuplas, 30);
+        printf("Caso queira visualizar a ordem das coordenadas selecionadas para a formacao das tuplas digite '1'. ");
+        scanf("%i", &testar);
         if(testar == 1){
-            printf("Igualdade com a letra A: %i\n", comparadisc(discriminanteLetraUsuario, classeA));
-            printf("Igualdade com a letra B: %i\n", comparadisc(discriminanteLetraUsuario, classeB));
-            printf("Igualdade com a letra C: %i\n", comparadisc(discriminanteLetraUsuario, classeC));
-            printf("Igualdade com a letra D: %i\n", comparadisc(discriminanteLetraUsuario, classeD));
-            printf("Igualdade com a letra E: %i\n", comparadisc(discriminanteLetraUsuario, classeE));
-            printf("Igualdade com a letra F: %i\n", comparadisc(discriminanteLetraUsuario, classeF));
-            printf("Igualdade com a letra G: %i\n", comparadisc(discriminanteLetraUsuario, classeG));
-            printf("Igualdade com a letra H: %i\n", comparadisc(discriminanteLetraUsuario, classeH));
-            printf("Igualdade com a letra I: %i\n", comparadisc(discriminanteLetraUsuario, classeI));
-            printf("Igualdade com a letra J: %i\n", comparadisc(discriminanteLetraUsuario, classeJ));
-            printf("Igualdade com a letra K: %i\n", comparadisc(discriminanteLetraUsuario, classeK));
-            printf("Igualdade com a letra L: %i\n", comparadisc(discriminanteLetraUsuario, classeL));
-            printf("Igualdade com a letra M: %i\n", comparadisc(discriminanteLetraUsuario, classeM));
-            printf("Igualdade com a letra N: %i\n", comparadisc(discriminanteLetraUsuario, classeN));
-            printf("Igualdade com a letra O: %i\n", comparadisc(discriminanteLetraUsuario, classeO));
-            printf("Igualdade com a letra P: %i\n", comparadisc(discriminanteLetraUsuario, classeP));
-            printf("Igualdade com a letra Q: %i\n", comparadisc(discriminanteLetraUsuario, classeQ));
-            printf("Igualdade com a letra R: %i\n", comparadisc(discriminanteLetraUsuario, classeR));
-            printf("Igualdade com a letra S: %i\n", comparadisc(discriminanteLetraUsuario, classeS));
-            printf("Igualdade com a letra T: %i\n", comparadisc(discriminanteLetraUsuario, classeT));
-            printf("Igualdade com a letra U: %i\n", comparadisc(discriminanteLetraUsuario, classeU));
-            printf("Igualdade com a letra V: %i\n", comparadisc(discriminanteLetraUsuario, classeV));
-            printf("Igualdade com a letra W: %i\n", comparadisc(discriminanteLetraUsuario, classeW));
-            printf("Igualdade com a letra X: %i\n", comparadisc(discriminanteLetraUsuario, classeX));
-            printf("Igualdade com a letra Y: %i\n", comparadisc(discriminanteLetraUsuario, classeY));
-            printf("Igualdade com a letra Z: %i\n", comparadisc(discriminanteLetraUsuario, classeZ));
-            }
+            for(i=0; i<30; i+=3){
+                printf("(%i, %i, %i) ", tuplas[i], tuplas[i+1], tuplas[i+2]);}}
 
-    int decisao;
-    printf("Caso queira visualizar a imagens mental da sua letra digite '1' ");
-    scanf("%i", &decisao);
-    if(decisao == 1)
-        exibirImagemMental(matrizUsuario);
-        
-    printf("Caso queira visualizar as imagens mentais das letras digite '2' ");
-    scanf("%i", &decisao);
-    if(decisao == 2){
+        //Recebendo a matriz do usuário para a prosseguimento da classificação
+        printf("WiSARD Original\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
+        for(i=0;i<6;i++) {
+            for(j=0;j<5;j++) {
+            printf("Digite a cor do pixel na linha %d e na coluna %d: ", i+1, j+1);
+            scanf("%d", &matrizUsuario[j+i*5]);
+            }
+        }
+
+        //Posicionando os neurônios, para isso cria-se um vetor de posições vazio
+        int posicoes[30];
+        //Atribuindo valores binários as posições das tuplas da letra do usuário
+        posicaoNeuronios(tuplas, matrizUsuario, posicoes, 30);
+        printf("Caso queira visualizar os valores binarios atribuidos as tuplas digite '1'. ");
+        scanf("%i", &testar);
+        if(testar == 1){
+            for(i=0; i<30; i+=3){
+                printf("(%i, %i, %i) ", posicoes[i], posicoes[i+1], posicoes[i+2]);}}
+
+        //Criando o discriminante das letras da base de dados
+        criaTodosDiscriminantes(tuplas);
+        printf("\nCaso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa 500 linhas. ");
+        scanf("%i", &testar);
+        if(testar == 1){
+            printf("Discriminante da classe A:\n");
+            exibeDiscriminante(classeA);
+            printf("Discriminante da classe B:\n");
+            exibeDiscriminante(classeB);
+            printf("Discriminante da classe C:\n");
+            exibeDiscriminante(classeC);
+            printf("Discriminante da classe D:\n");
+            exibeDiscriminante(classeD);
+            printf("Discriminante da classe E:\n");
+            exibeDiscriminante(classeE);
+            printf("Discriminante da classe F:\n");
+            exibeDiscriminante(classeF);
+            printf("Discriminante da classe G:\n");
+            exibeDiscriminante(classeG);
+            printf("Discriminante da classe H:\n");
+            exibeDiscriminante(classeH);
+            printf("Discriminante da classe I:\n");
+            exibeDiscriminante(classeI);
+            printf("Discriminante da classe J:\n");
+            exibeDiscriminante(classeJ);
+            printf("Discriminante da classe K:\n");
+            exibeDiscriminante(classeK);
+            printf("Discriminante da classe L:\n");
+            exibeDiscriminante(classeL);
+            printf("Discriminante da classe M:\n");
+            exibeDiscriminante(classeM);
+            printf("Discriminante da classe N:\n");
+            exibeDiscriminante(classeN);
+            printf("Discriminante da classe O:\n");
+            exibeDiscriminante(classeO);
+            printf("Discriminante da classe P:\n");
+            exibeDiscriminante(classeP);
+            printf("Discriminante da classe Q:\n");
+            exibeDiscriminante(classeQ);
+            printf("Discriminante da classe R:\n");
+            exibeDiscriminante(classeR);
+            printf("Discriminante da classe S:\n");
+            exibeDiscriminante(classeS);
+            printf("Discriminante da classe T:\n");
+            exibeDiscriminante(classeT);
+            printf("Discriminante da classe U:\n");
+            exibeDiscriminante(classeU);
+            printf("Discriminante da classe V:\n");
+            exibeDiscriminante(classeV);
+            printf("Discriminante da classe W:\n");
+            exibeDiscriminante(classeW);
+            printf("Discriminante da classe X:\n");
+            exibeDiscriminante(classeX);
+            printf("Discriminante da classe Y:\n");
+            exibeDiscriminante(classeY);
+            printf("Discriminante da classe Z:\n");
+            exibeDiscriminante(classeZ);
+        }
+
+        //Criando o discriminante da letra do usuário
+        int discriminanteLetraUsuario[80];
+        //Limpando a memória
+        Zera(discriminanteLetraUsuario);
+        printf("Caso queira conferir se o discriminante foi realmente zerado digite 1. ");
+        scanf("%i", &testar);
+        if(testar == 1){
+            printf("Discriminante zerado:\n");
+            exibeDiscriminante(discriminanteLetraUsuario);}
+
+        //Propriamente criando a discriminante do usuario
+        CriaDiscriminante(discriminanteLetraUsuario, posicoes);
+        printf("Caso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
+        scanf("%i", &testar);
+        if(testar == 1){
+            printf("Discriminante do usuario:\n");
+            exibeDiscriminante(discriminanteLetraUsuario);}
+
+        //Comparando a letra do usuário com as letras treinados e exibindo o resultado 
+        compare(discriminanteLetraUsuario, classeA, classeB, classeC, classeD,classeE, classeF, classeG, classeH, classeI, classeJ, classeK, classeL, classeM, classeN, classeO, classeP, classeQ, classeR, classeS, classeT, classeU, classeV, classeW, classeX, classeY, classeZ);
+        printf("Caso queira visualizar o valor de igualdade entre a letra digitada e cada uma das letras possiveis digite 1. ");
+        scanf("%i", &testar);
+            if(testar == 1){
+                printf("Igualdade com a letra A: %i\n", comparadisc(discriminanteLetraUsuario, classeA));
+                printf("Igualdade com a letra B: %i\n", comparadisc(discriminanteLetraUsuario, classeB));
+                printf("Igualdade com a letra C: %i\n", comparadisc(discriminanteLetraUsuario, classeC));
+                printf("Igualdade com a letra D: %i\n", comparadisc(discriminanteLetraUsuario, classeD));
+                printf("Igualdade com a letra E: %i\n", comparadisc(discriminanteLetraUsuario, classeE));
+                printf("Igualdade com a letra F: %i\n", comparadisc(discriminanteLetraUsuario, classeF));
+                printf("Igualdade com a letra G: %i\n", comparadisc(discriminanteLetraUsuario, classeG));
+                printf("Igualdade com a letra H: %i\n", comparadisc(discriminanteLetraUsuario, classeH));
+                printf("Igualdade com a letra I: %i\n", comparadisc(discriminanteLetraUsuario, classeI));
+                printf("Igualdade com a letra J: %i\n", comparadisc(discriminanteLetraUsuario, classeJ));
+                printf("Igualdade com a letra K: %i\n", comparadisc(discriminanteLetraUsuario, classeK));
+                printf("Igualdade com a letra L: %i\n", comparadisc(discriminanteLetraUsuario, classeL));
+                printf("Igualdade com a letra M: %i\n", comparadisc(discriminanteLetraUsuario, classeM));
+                printf("Igualdade com a letra N: %i\n", comparadisc(discriminanteLetraUsuario, classeN));
+                printf("Igualdade com a letra O: %i\n", comparadisc(discriminanteLetraUsuario, classeO));
+                printf("Igualdade com a letra P: %i\n", comparadisc(discriminanteLetraUsuario, classeP));
+                printf("Igualdade com a letra Q: %i\n", comparadisc(discriminanteLetraUsuario, classeQ));
+                printf("Igualdade com a letra R: %i\n", comparadisc(discriminanteLetraUsuario, classeR));
+                printf("Igualdade com a letra S: %i\n", comparadisc(discriminanteLetraUsuario, classeS));
+                printf("Igualdade com a letra T: %i\n", comparadisc(discriminanteLetraUsuario, classeT));
+                printf("Igualdade com a letra U: %i\n", comparadisc(discriminanteLetraUsuario, classeU));
+                printf("Igualdade com a letra V: %i\n", comparadisc(discriminanteLetraUsuario, classeV));
+                printf("Igualdade com a letra W: %i\n", comparadisc(discriminanteLetraUsuario, classeW));
+                printf("Igualdade com a letra X: %i\n", comparadisc(discriminanteLetraUsuario, classeX));
+                printf("Igualdade com a letra Y: %i\n", comparadisc(discriminanteLetraUsuario, classeY));
+                printf("Igualdade com a letra Z: %i\n", comparadisc(discriminanteLetraUsuario, classeZ));
+                }
+                int decisao;
+                printf("Caso queira visualizar a imagens mental da sua letra digite '1' ");
+                scanf("%i", &decisao);
+                if(decisao == 1)
+                    exibirImagemMental(matrizUsuario);
+                
+                printf("Digite o numero correspondente a funcao desejada\nPara classificar uma letra[1]\nVisualizar as imagens mentais da base de dados[2]\n");
+                printf("Para sair da WiSARD[9] - [AVISO] Todo o progresso sera perdido\n");
+                scanf("%i", &menu);
+    }
+
+    if(menu == 2){//Mapas mentais da base de dados
         printf("Mapa mental da Letra A:\n");
         exibirImagemMental(matrizA);
         printf("Mapa mental da Letra B:\n");
@@ -294,6 +300,10 @@ int main(){
         printf("Mapa mental da Letra Z:\n");
         exibirImagemMental(matrizZ);
     }
+    
+    printf("Digite o numero correspondente a funcao desejada\nPara classificar uma letra[1]\nVisualizar as imagens mentais da base de dados[2]\n");
+    printf("Para sair da WiSARD[9] - [AVISO] Todo o progresso sera perdido\n");
+    scanf("%i", &menu);}
     
     return 0;
 }
