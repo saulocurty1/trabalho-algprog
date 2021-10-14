@@ -150,3 +150,10 @@ void exibeDiscriminante(int *discriminante){
         printf("%i %i %i %i %i %i %i %i\n", discriminante[i],discriminante[i+1],discriminante[i+2],discriminante[i+3],discriminante[i+4],discriminante[i+5],discriminante[i+6],discriminante[i+7]);
     }
 }
+
+void somaMatrizes(int *matrizA, int *matrizB, int tamanho){
+    int i;
+    for(i=0; i<tamanho; i++){
+        matrizA[i] += matrizB[i];
+    }
+}

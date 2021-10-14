@@ -170,9 +170,9 @@ int main(){
     if(menu == 1){ //CLASSIFICAR UMA LETRA
         //Recebendo a matriz do usuário para a prosseguimento da classificação
         printf("\n\nDigite uma letra em formato de uma matriz 6x5(1:Preto;0:Branco):\n\n");
-        for(i=0;i<6;i++) {
-            for(j=0;j<5;j++) {
-            printf("Digite a cor do pixel na linha %d e na coluna %d: ", i+1, j+1);
+        for(j=0;j<6;j++) {
+            for(i=0;i<5;i++) {
+            printf("Digite a cor do pixel na linha %d e na coluna %d: ", j+1, i+1);
             scanf("%d", &matrizUsuario[j+i*5]);
             }
         }
@@ -254,131 +254,157 @@ int main(){
             scanf("%c", &letra);
             if(letra == 'a' || letra == 'A'){
                 CriaDiscriminante(classeA, posicoes);
+                somaMatrizes(matrizA,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeA);
             }
             if(letra == 'b' || letra == 'B'){
                 CriaDiscriminante(classeB, posicoes);
+                somaMatrizes(matrizB,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeB);
             }
             if(letra == 'c' || letra == 'C'){
                 CriaDiscriminante(classeC, posicoes);
+                somaMatrizes(matrizC,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeC);
             }
             if(letra == 'd' || letra == 'D'){
                 CriaDiscriminante(classeD, posicoes);
+                somaMatrizes(matrizD,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeD);
             }
             if(letra == 'e' || letra == 'E'){
                 CriaDiscriminante(classeE, posicoes);
+                somaMatrizes(matrizE,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeE);
             }
             if(letra == 'f' || letra == 'F'){
                 CriaDiscriminante(classeF, posicoes);
+                somaMatrizes(matrizF,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeF);
             }
             if(letra == 'g' || letra == 'G'){
                 CriaDiscriminante(classeG, posicoes);
+                somaMatrizes(matrizG,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeG);
             }
             if(letra == 'h' || letra == 'H'){
                 CriaDiscriminante(classeH, posicoes);
+                somaMatrizes(matrizH,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeH);
             }
             if(letra == 'i' || letra == 'I'){
                 CriaDiscriminante(classeI, posicoes);
+                somaMatrizes(matrizI,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeI);
             }
             if(letra == 'j' || letra == 'J'){
                 CriaDiscriminante(classeJ, posicoes);
+                somaMatrizes(matrizJ,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeJ);
             }
             if(letra == 'k' || letra == 'K'){
                 CriaDiscriminante(classeK, posicoes);
+                somaMatrizes(matrizK,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeK);
             }
             if(letra == 'l' || letra == 'L'){
                 CriaDiscriminante(classeL, posicoes);
+                somaMatrizes(matrizL,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeL);
             }
             if(letra == 'm' || letra == 'M'){
                 CriaDiscriminante(classeM, posicoes);
+                somaMatrizes(matrizM,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeM);
             }
             if(letra == 'n' || letra == 'N'){
                 CriaDiscriminante(classeN, posicoes);
+                somaMatrizes(matrizN,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeN);
             }
             if(letra == 'o' || letra == 'O'){
                 CriaDiscriminante(classeO, posicoes);
+                somaMatrizes(matrizO,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeO);
             }
             if(letra == 'p' || letra == 'P'){
                 CriaDiscriminante(classeP, posicoes);
+                somaMatrizes(matrizP,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeP);
             }
             if(letra == 'q' || letra == 'Q'){
                 CriaDiscriminante(classeQ, posicoes);
+                somaMatrizes(matrizQ,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeQ);
             }
             if(letra == 'r' || letra == 'R'){
                 CriaDiscriminante(classeR, posicoes);
+                somaMatrizes(matrizR,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeR);
             }
             if(letra == 's' || letra == 'S'){
                 CriaDiscriminante(classeS, posicoes);
+                somaMatrizes(matrizS,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeS);
             }
             if(letra == 't' || letra == 'T'){
                 CriaDiscriminante(classeT, posicoes);
+                somaMatrizes(matrizT,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeT);
             }
             if(letra == 'u' || letra == 'U'){
                 CriaDiscriminante(classeU, posicoes);
+                somaMatrizes(matrizU,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeU);
             }
             if(letra == 'v' || letra == 'V'){
                 CriaDiscriminante(classeV, posicoes);
+                somaMatrizes(matrizV,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeV);
             }
             if(letra == 'w' || letra == 'W'){
                 CriaDiscriminante(classeW, posicoes);
+                somaMatrizes(matrizW,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeW);
             }
             if(letra == 'x' || letra == 'X'){
                 CriaDiscriminante(classeX, posicoes);
+                somaMatrizes(matrizX,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeX);
             }
             if(letra == 'y' || letra == 'Y'){
                 CriaDiscriminante(classeY, posicoes);
+                somaMatrizes(matrizY,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeY);
             }
             if(letra == 'z' || letra == 'Z'){
                 CriaDiscriminante(classeZ, posicoes);
+                somaMatrizes(matrizZ,matrizUsuario,30);
                 printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeZ);
             }

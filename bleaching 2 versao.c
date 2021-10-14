@@ -8,7 +8,8 @@ int main(){
 int TESTE1[5]={1,2,2,3,1};
 int TESTE2[5]={1,3,3,2,1};
 
-soma2 = 0;
+int soma2 = 0;
+int soma1 = 0;
 
 if(TESTE1[4] == TESTE2[4]){
 
