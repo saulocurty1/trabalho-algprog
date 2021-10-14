@@ -253,165 +253,190 @@ int main(){
             getchar();
             scanf("%c", &letra);
             if(letra == 'a' || letra == 'A'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeA, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeA);
             }
             if(letra == 'b' || letra == 'B'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeB, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeB);
             }
             if(letra == 'c' || letra == 'C'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeC, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeC);
             }
             if(letra == 'd' || letra == 'D'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeD, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeD);
             }
             if(letra == 'e' || letra == 'E'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeE, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeE);
             }
             if(letra == 'f' || letra == 'F'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeF, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeF);
             }
             if(letra == 'g' || letra == 'G'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeG, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeG);
             }
             if(letra == 'h' || letra == 'H'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeH, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeH);
             }
             if(letra == 'i' || letra == 'I'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeI, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeI);
             }
             if(letra == 'j' || letra == 'J'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeJ, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeJ);
             }
             if(letra == 'k' || letra == 'K'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeK, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeK);
             }
             if(letra == 'l' || letra == 'L'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeL, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeL);
             }
             if(letra == 'm' || letra == 'M'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeM, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeM);
             }
             if(letra == 'n' || letra == 'N'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeN, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeN);
             }
             if(letra == 'o' || letra == 'O'){
-                printf("\nNova discriminante da letra %c\n", letra);
                 CriaDiscriminante(classeO, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeO);
             }
             if(letra == 'p' || letra == 'P'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeP, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeP);
             }
             if(letra == 'q' || letra == 'Q'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeQ, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeQ);
             }
             if(letra == 'r' || letra == 'R'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeR, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeR);
             }
             if(letra == 's' || letra == 'S'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeS, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeS);
             }
             if(letra == 't' || letra == 'T'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeT, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeT);
             }
             if(letra == 'u' || letra == 'U'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeU, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeU);
             }
             if(letra == 'v' || letra == 'V'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeV, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeV);
             }
             if(letra == 'w' || letra == 'W'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeW, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeW);
             }
             if(letra == 'x' || letra == 'X'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeX, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeX);
             }
             if(letra == 'y' || letra == 'Y'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeY, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeY);
             }
             if(letra == 'z' || letra == 'Z'){
-                printf("\nNova discriminante da letra %c\n", letra);
+                CriaDiscriminante(classeZ, posicoes);
+                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
                 exibeDiscriminante(classeZ);
             }
         }
     }
 
-    if(menu == 2){//Mapas mentais da base de dados
-        printf("Mapa mental da Letra A:\n");
+    if(menu == 2){//Imagens mentais da base de dados
+        printf("Imagem mental da Letra A:\n");
         exibirImagemMental(matrizA);
-        printf("Mapa mental da Letra B:\n");
+        printf("Imagem mental da Letra B:\n");
         exibirImagemMental(matrizB);
-        printf("Mapa mental da Letra C:\n");
+        printf("Imagem mental da Letra C:\n");
         exibirImagemMental(matrizC);
-        printf("Mapa mental da Letra D:\n");
+        printf("Imagem mental da Letra D:\n");
         exibirImagemMental(matrizD);
-        printf("Mapa mental da Letra E:\n");
+        printf("Imagem mental da Letra E:\n");
         exibirImagemMental(matrizE);
-        printf("Mapa mental da Letra F:\n");
+        printf("Imagem mental da Letra F:\n");
         exibirImagemMental(matrizF);
-        printf("Mapa mental da Letra G:\n");
+        printf("Imagem mental da Letra G:\n");
         exibirImagemMental(matrizG);
-        printf("Mapa mental da Letra H:\n");
+        printf("Imagem mental da Letra H:\n");
         exibirImagemMental(matrizH);
-        printf("Mapa mental da Letra I:\n");
+        printf("Imagem mental da Letra I:\n");
         exibirImagemMental(matrizI);
-        printf("Mapa mental da Letra J:\n");
+        printf("Imagem mental da Letra J:\n");
         exibirImagemMental(matrizJ);
-        printf("Mapa mental da Letra K:\n");
+        printf("Imagem mental da Letra K:\n");
         exibirImagemMental(matrizK);
-        printf("Mapa mental da Letra L:\n");
+        printf("Imagem mental da Letra L:\n");
         exibirImagemMental(matrizL);
-        printf("Mapa mental da Letra M:\n");
+        printf("Imagem mental da Letra M:\n");
         exibirImagemMental(matrizM);
-        printf("Mapa mental da Letra N:\n");
+        printf("Imagem mental da Letra N:\n");
         exibirImagemMental(matrizN);
-        printf("Mapa mental da Letra O:\n");
+        printf("Imagem mental da Letra O:\n");
         exibirImagemMental(matrizO);
-        printf("Mapa mental da Letra P:\n");
+        printf("Imagem mental da Letra P:\n");
         exibirImagemMental(matrizP);
-        printf("Mapa mental da Letra Q:\n");
+        printf("Imagem mental da Letra Q:\n");
         exibirImagemMental(matrizQ);
-        printf("Mapa mental da Letra R:\n");
+        printf("Imagem mental da Letra R:\n");
         exibirImagemMental(matrizR);
-        printf("Mapa mental da Letra S:\n");
+        printf("Imagem mental da Letra S:\n");
         exibirImagemMental(matrizS);
-        printf("Mapa mental da Letra T:\n");
+        printf("Imagem mental da Letra T:\n");
         exibirImagemMental(matrizT);
-        printf("Mapa mental da Letra U:\n");
+        printf("Imagem mental da Letra U:\n");
         exibirImagemMental(matrizU);
-        printf("Mapa mental da Letra V:\n");
+        printf("Imagem mental da Letra V:\n");
         exibirImagemMental(matrizV);
-        printf("Mapa mental da Letra W:\n");
+        printf("Imagem mental da Letra W:\n");
         exibirImagemMental(matrizW);
-        printf("Mapa mental da Letra X:\n");
+        printf("Imagem mental da Letra X:\n");
         exibirImagemMental(matrizX);
-        printf("Mapa mental da Letra Y:\n");
+        printf("Imagem mental da Letra Y:\n");
         exibirImagemMental(matrizY);
-        printf("Mapa mental da Letra Z:\n");
+        printf("Imagem mental da Letra Z:\n");
         exibirImagemMental(matrizZ);
     }}
     
