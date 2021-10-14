@@ -1,4 +1,4 @@
-#include "funcoes.c"
+#include "funcoesresolver.c"
 #include <stdio.h>
 
 #define MAX 30
