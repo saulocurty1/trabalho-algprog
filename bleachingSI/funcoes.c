@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 
 void somaMatrizes(int *matrizA, int *matrizB, int tamanho){
