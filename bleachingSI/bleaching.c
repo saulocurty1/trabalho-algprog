@@ -382,7 +382,7 @@ while (menu!=9){
                 printf("(%i, %i, %i) ", posicoes[i], posicoes[i+1], posicoes[i+2]);}}
 
 		//Propriamente criando a discriminante do usuario
-		printf("Caso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
+		printf("\nCaso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
         scanf("%i", &testar);
         if(testar == 1){
             printf("Discriminante do usuario:\n");
