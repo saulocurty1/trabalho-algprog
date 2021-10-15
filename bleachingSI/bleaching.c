@@ -324,20 +324,21 @@ int main(){
 	somaMatrizes(matrizSU,matrizU4,30);
 	somaMatrizes(matrizSU,matrizU5,30);
 	int testar, menu, i, j;
+
+	//Criando o discriminante das letras da base de dados
 	criaTudo(); 
+
 	printf("***Bem-vindo(a) a WiSARD!***\n");
-	// recebe matriz CORRIGE ESSA MERDA DEPOIS PORRA
 	
-	// aaaaaa
 	printf("Caso queira visualizar a ordem das coordenadas selecionadas para a formacao das tuplas digite '1'. ");
     scanf("%i", &testar);
     if(testar == 1){
         for(i=0; i<30; i+=3){
             printf("(%i, %i, %i) ", tuplaA[i], tuplaA[i+1], tuplaA[i+2]);}}
-			
+		
 	printf("\nCaso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa 500 linhas. ");
     scanf("%i", &testar);
-    if(testar == 1){
+    if(testar == 1){//avalia resposta do usuario
         printf("Discriminante da classe A:\n");
         exibeDiscriminante(ClasseA);
         printf("Discriminante da classe E:\n");
@@ -357,15 +358,22 @@ while (menu!=9){
     printf("Para sair da WiSARD[9] - [AVISO] Todo o progresso sera perdido\n");
 	scanf("%d",&menu);
 
-	if (menu == 1){
+	if (menu == 1){ //CLASSIFICAR UMA LETRA
+
+		//Recebendo a matriz do usuário para a prosseguimento da classificação
 		printf("Digite a retina\n");
 		for (int i = 0; i < 30; ++i)
 		{
 		scanf("%d",&discu[i]);
 		}
 		posicaoNeuronios(tuplaA, discu, posicu, 30);
+		Zera(classu, 80);
 		CriaDiscriminante(classu, posicu);
+
+		//Posicionando os neurônios, para isso cria-se um vetor de posições vazio
 		int posicoes[30];
+
+		//Atribuindo valores binários as posições das tuplas da letra do usuário
 		posicaoNeuronios(tuplaA, discu, posicoes, 30);
 		printf("Caso queira visualizar os valores binarios atribuidos as tuplas digite '1'. ");
         scanf("%i", &testar);
@@ -373,12 +381,14 @@ while (menu!=9){
             for(i=0; i<30; i+=3){
                 printf("(%i, %i, %i) ", posicoes[i], posicoes[i+1], posicoes[i+2]);}}
 
+		//Propriamente criando a discriminante do usuario
 		printf("Caso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
         scanf("%i", &testar);
         if(testar == 1){
             printf("Discriminante do usuario:\n");
-            exibeDiscriminante(classu);} // VOCE ESTA AQUI
+            exibeDiscriminante(classu);} 
 
+		//Comparando a letra do usuário com as letras treinados e exibindo o resultado
 		compareBleaching(classu);
 		printf("Caso queira visualizar o valor de igualdade entre a letra digitada e cada uma das letras possiveis digite 1. ");
         scanf("%i", &testar);
@@ -395,12 +405,13 @@ while (menu!=9){
                 if(decisao == 1)
                     exibirImagemMental(discu);
 			}
+		//Treinando a WiSARD
 		int decisao;
 		printf("Se você quer treinar a Wizard digite 1: \n");
 		scanf("%d", &decisao);
 		if(decisao == 1){
 			char letra;
-			printf("Qual era a letra correta?\n");
+			printf("Qual letra você quer adicionar\n");
 			getchar();
 			scanf("%c", &letra);
 			if(letra == 'a' || letra == 'A'){
@@ -434,7 +445,7 @@ while (menu!=9){
                 exibeDiscriminante(ClasseU);
             }
 		}
-	}if(menu == 2){
+	}if(menu == 2){//Imagens mentais da base de dados
 		printf("Imagem mental da Letra A:\n");
         exibirImagemMental(matrizSA);
         printf("Imagem mental da Letra E:\n");
