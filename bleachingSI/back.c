@@ -3,13 +3,6 @@
 #include "funcoes.c"
 #define MAX 30
 	int vet[5];
-	int matrizSA[30]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	int matrizSE[30]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	int matrizSI[30]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	int matrizSO[30]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-	int matrizSU[30]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-
-
 	int matrizA1[MAX]={0,1,1,1,0,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1};
 	int matrizA2[MAX]={1,1,1,1,1,1,0,0,0,1,1,0,0,0,1,1,1,1,1,1,1,0,0,0,1,1,0,0,0,1};
 	int matrizA3[MAX]={0,0,0,0,0,0,1,1,1,0,0,1,0,1,0,0,1,1,1,0,0,1,0,1,0,0,1,0,1,0};
@@ -75,10 +68,10 @@ int compareBleaching(int *neuroletrausuario){
     vet[2]=comparadiscBleaching(neuroletrausuario, ClasseI, n);
     vet[3]=comparadiscBleaching(neuroletrausuario, ClasseO, n);
     vet[4]=comparadiscBleaching(neuroletrausuario, ClasseU, n);
-    // for (int i = 0; i < 5; ++i)
-    // {
-    // 	printf("Vet %d es %d ||||||||| ->",i,vet[i]);
-    // }
+    for (int i = 0; i < 5; ++i)
+    {
+    	printf("Vet %d es %d ||||||||| ->",i,vet[i]);
+    }
     int maior2 = 0;
     int letra2 = 0;
     int aux = 0;
@@ -183,10 +176,15 @@ int compareBleaching(int *neuroletrausuario){
 }
 }
 }
-void criaTudo(){
-	
+int main(){
+	for (int i = 0; i < 30; ++i)
+	{
+		scanf("%d",&discu[i]);
+	}
+	geraTuplas(tuplaA, 30);
 
-
+	posicaoNeuronios(tuplaA, discu, posicu, 30);
+	CriaDiscriminante(classu, posicu);
 
 	posicaoNeuronios(tuplaA, matrizA1, posicoesA, 30);
 	CriaDiscriminante(ClasseA, posicoesA);
@@ -290,288 +288,64 @@ void criaTudo(){
 	posicaoNeuronios(tuplaA, matrizU5, posicoesU, 30);
 	CriaDiscriminante(ClasseU, posicoesU);
 
-}
-int main(){
-	//soma as matrizes para fazer uma matriz superior que vai ajudar na imagem mental
-	geraTuplas(tuplaA, 30);
-	somaMatrizes(matrizSA, matrizA1,30);
-	somaMatrizes(matrizSA,matrizA2,30);
-	somaMatrizes(matrizSA,matrizA3,30);
-	somaMatrizes(matrizSA,matrizA4,30);
-	somaMatrizes(matrizSA,matrizA5,30);
-
-	somaMatrizes(matrizSE,matrizE1,30);
-	somaMatrizes(matrizSE,matrizE2,30);
-	somaMatrizes(matrizSE,matrizE3,30);
-	somaMatrizes(matrizSE,matrizE4,30);
-	somaMatrizes(matrizSE,matrizE5,30);
-	
-	somaMatrizes(matrizSI,matrizI1,30);
-	somaMatrizes(matrizSI,matrizI2,30);
-	somaMatrizes(matrizSI,matrizI3,30);
-	somaMatrizes(matrizSI,matrizI4,30);
-	somaMatrizes(matrizSI,matrizI5,30);
-
-	somaMatrizes(matrizSO,matrizO1,30);
-	somaMatrizes(matrizSO,matrizO2,30);
-	somaMatrizes(matrizSO,matrizO3,30);
-	somaMatrizes(matrizSO,matrizO4,30);
-	somaMatrizes(matrizSO,matrizO5,30);
-
-	somaMatrizes(matrizSU,matrizU1,30);
-	somaMatrizes(matrizSU,matrizU2,30);
-	somaMatrizes(matrizSU,matrizU3,30);
-	somaMatrizes(matrizSU,matrizU4,30);
-	somaMatrizes(matrizSU,matrizU5,30);
-	int testar, menu, i, j;
-	criaTudo(); 
-	printf("***Bem-vindo(a) a WiSARD!***\n");
-	// recebe matriz CORRIGE ESSA MERDA DEPOIS PORRA
-	
-	// aaaaaa
-	printf("Caso queira visualizar a ordem das coordenadas selecionadas para a formacao das tuplas digite '1'. ");
-    scanf("%i", &testar);
-    if(testar == 1){
-        for(i=0; i<30; i+=3){
-            printf("(%i, %i, %i) ", tuplaA[i], tuplaA[i+1], tuplaA[i+2]);}}
-			
-	printf("\nCaso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa 500 linhas. ");
-    scanf("%i", &testar);
-    if(testar == 1){
-        printf("Discriminante da classe A:\n");
-        exibeDiscriminante(ClasseA);
-        printf("Discriminante da classe E:\n");
-        exibeDiscriminante(ClasseE);
-        printf("Discriminante da classe I:\n");
-        exibeDiscriminante(ClasseI);
-        printf("Discriminante da classe O:\n");
-        exibeDiscriminante(ClasseO);
-        printf("Discriminante da classe U:\n");
-        exibeDiscriminante(ClasseU);
-	}
 int contcont = 0;
-	
-printf("\n--------------------------------------------\n");
-while (menu!=9){
-	printf("Digite o numero correspondente a funcao desejada\nPara classificar uma letra[1]\nVisualizar as imagens mentais da base de dados[2]\n");
-    printf("Para sair da WiSARD[9] - [AVISO] Todo o progresso sera perdido\n");
-	scanf("%d",&menu);
-
-	if (menu == 1){
-		printf("Digite a retina\n");
-		for (int i = 0; i < 30; ++i)
-		{
-		scanf("%d",&discu[i]);
-		}
-		posicaoNeuronios(tuplaA, discu, posicu, 30);
-		CriaDiscriminante(classu, posicu);
-		int posicoes[30];
-		posicaoNeuronios(tuplaA, discu, posicoes, 30);
-		printf("Caso queira visualizar os valores binarios atribuidos as tuplas digite '1'. ");
-        scanf("%i", &testar);
-        if(testar == 1){
-            for(i=0; i<30; i+=3){
-                printf("(%i, %i, %i) ", posicoes[i], posicoes[i+1], posicoes[i+2]);}}
-
-		printf("Caso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
-        scanf("%i", &testar);
-        if(testar == 1){
-            printf("Discriminante do usuario:\n");
-            exibeDiscriminante(classu);} // VOCE ESTA AQUI
-
-		compareBleaching(classu);
-		printf("Caso queira visualizar o valor de igualdade entre a letra digitada e cada uma das letras possiveis digite 1. ");
-        scanf("%i", &testar);
-            if(testar == 1){
-                printf("Igualdade com a letra A: %i\n", comparadisc(classu, ClasseA));
-                printf("Igualdade com a letra E: %i\n", comparadisc(classu, ClasseE));
-                printf("Igualdade com a letra I: %i\n", comparadisc(classu, ClasseI));
-                printf("Igualdade com a letra O: %i\n", comparadisc(classu, ClasseO));
-                printf("Igualdade com a letra U: %i\n", comparadisc(classu, ClasseU));
-
-				int decisao;
-                printf("Caso queira visualizar a imagem mental da sua letra digite '1' ");
-                scanf("%i", &decisao);
-                if(decisao == 1)
-                    exibirImagemMental(discu);
-			}
-		int decisao;
-		printf("Se você quer treinar a Wizard digite 1: \n");
-		scanf("%d", &decisao);
-		if(decisao == 1){
-			char letra;
-			printf("Qual era a letra correta?\n");
-			getchar();
-			scanf("%c", &letra);
-			if(letra == 'a' || letra == 'A'){
-                CriaDiscriminante(ClasseA, posicoes);
-                somaMatrizes(matrizSA,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseA);
-            }
-            if(letra == 'e' || letra == 'E'){
-                CriaDiscriminante(ClasseE, posicoes);
-                somaMatrizes(matrizSE,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseE);
-            }
-            if(letra == 'i' || letra == 'I'){
-                CriaDiscriminante(ClasseI, posicoes);
-                somaMatrizes(matrizSI,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseI);
-            }
-            if(letra == 'o' || letra == 'O'){
-                CriaDiscriminante(ClasseO, posicoes);
-                somaMatrizes(matrizSO,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseO);
-            }
-            if(letra == 'u' || letra == 'U'){
-                CriaDiscriminante(ClasseE, posicoes);
-                somaMatrizes(matrizSU,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseU);
-            }
-		}
-	}if(menu == 2){
-		printf("Imagem mental da Letra A:\n");
-        exibirImagemMental(matrizSA);
-        printf("Imagem mental da Letra E:\n");
-        exibirImagemMental(matrizSE);
-        printf("Imagem mental da Letra I:\n");
-        exibirImagemMental(matrizSI);
-        printf("Imagem mental da Letra O:\n");
-        exibirImagemMental(matrizSO);
-        printf("Imagem mental da Letra U:\n");
-        exibirImagemMental(matrizSU);
-	}}
-
-	return 0;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	}
-
-// printf("-----------A---------------");
-//     for(int i = 0; i < 80; i++){
-//         printf("%d", ClasseA[i]);
-//         contcont++; 
-//         if(contcont % 8 == 0){
-//             printf("\n");
-//             contcont = 0;
-//         }
-//     }printf("--------------E-------------\n");
-//     contcont = 0;
-//     for(int i = 0; i < 80; i++){
-//         printf("%d", ClasseE[i]);
-//         contcont++; 
-//         if(contcont % 8 == 0){
-//             printf("\n");
-//             contcont = 0;
-//         }
-//     } printf("--------------I-------------\n");
-//     contcont = 0;
-//     for(int i = 0; i < 80; i++){
-//         printf("%d", ClasseI[i]);
-//         contcont++; 
-//         if(contcont % 8 == 0){
-//             printf("\n");
-//             contcont = 0;
-//         }
-//     }printf("---------------O------------\n");
-//     contcont = 0;
-//     for(int i = 0; i < 80; i++){
-//         printf("%d", ClasseO[i]);
-//         contcont++; 
-//         if(contcont % 8 == 0){
-//             printf("\n");
-//             contcont = 0;
-//         }
-//     }printf("---------------U------------\n");
-//     contcont = 0;
-//     for(int i = 0; i < 80; i++){
-//         printf("%d", ClasseU[i]);
-//         contcont++; 
-//         if(contcont % 8 == 0){
-//             printf("\n");
-//             contcont = 0;
-//         }
-//     }printf("--------------User-------------\n");
-//     contcont = 0;
-//     for(int i = 0; i < 80; i++){
-//         printf("%d", classu[i]);
-//         contcont++; 
-//         if(contcont % 8 == 0){
-//             printf("\n");
-//             contcont = 0;
-//         }
-     
+printf("-----------A---------------");
+    for(int i = 0; i < 80; i++){
+        printf("%d", ClasseA[i]);
+        contcont++; 
+        if(contcont % 8 == 0){
+            printf("\n");
+            contcont = 0;
+        }
+    }printf("--------------E-------------\n");
+    contcont = 0;
+    for(int i = 0; i < 80; i++){
+        printf("%d", ClasseE[i]);
+        contcont++; 
+        if(contcont % 8 == 0){
+            printf("\n");
+            contcont = 0;
+        }
+    } printf("--------------I-------------\n");
+    contcont = 0;
+    for(int i = 0; i < 80; i++){
+        printf("%d", ClasseI[i]);
+        contcont++; 
+        if(contcont % 8 == 0){
+            printf("\n");
+            contcont = 0;
+        }
+    }printf("---------------O------------\n");
+    contcont = 0;
+    for(int i = 0; i < 80; i++){
+        printf("%d", ClasseO[i]);
+        contcont++; 
+        if(contcont % 8 == 0){
+            printf("\n");
+            contcont = 0;
+        }
+    }printf("---------------U------------\n");
+    contcont = 0;
+    for(int i = 0; i < 80; i++){
+        printf("%d", ClasseU[i]);
+        contcont++; 
+        if(contcont % 8 == 0){
+            printf("\n");
+            contcont = 0;
+        }
+    }printf("--------------User-------------\n");
+    contcont = 0;
+    for(int i = 0; i < 80; i++){
+        printf("%d", classu[i]);
+        contcont++; 
+        if(contcont % 8 == 0){
+            printf("\n");
+            contcont = 0;
+        }
+    }
      
 
-	//compareBleaching(classu);
-	
+	compareBleaching(classu);
+
+
+}

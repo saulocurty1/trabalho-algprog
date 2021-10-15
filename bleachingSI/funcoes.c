@@ -1,7 +1,30 @@
 #include <stdio.h>
 #include <math.h>
 
-    
+
+void somaMatrizes(int *matrizA, int *matrizB, int tamanho){
+    int i;
+    //Soma entre duas matrizes
+    for(i=0; i<tamanho; i++){
+        matrizA[i] += matrizB[i];
+    }
+}
+
+
+void exibirImagemMental(int *letra){
+    int i;
+    //Exibi a imagem mental da matriz desejada
+    for(i = 0; i<30; i+=5){
+        printf("%i %i %i %i %i\n",letra[i], letra[i+1], letra[i+2], letra[i+3],letra[i+4]);
+    }
+}
+
+void exibeDiscriminante(int *discriminante){
+    int i;
+    for(i=0; i<80; i+=8){
+        printf("%i %i %i %i %i %i %i %i\n", discriminante[i],discriminante[i+1],discriminante[i+2],discriminante[i+3],discriminante[i+4],discriminante[i+5],discriminante[i+6],discriminante[i+7]);
+    }
+}    
 
 void geraTuplas(int *vetorTuplas, int tamanho){
     //Variaveis locais
