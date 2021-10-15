@@ -52,7 +52,7 @@ void Zera(int *ma){
     }
 }
 
-void CriaDiscriminante(int *neuronio, int *posicoes){
+void CriaDiscriminador(int *neuronio, int *posicoes){
     int contador = 0;
     int a, b, c = 0;
     int valor = 0;
@@ -145,7 +145,7 @@ void exibirImagemMental(int *letra){
     }
 }
 
-void exibeDiscriminante(int *discriminante){
+void exibeDiscriminador(int *discriminante){
     int i;
     //Exibe o discrimante da matriz desejada
     for(i=0; i<80; i+=8){
