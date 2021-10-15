@@ -52,136 +52,136 @@
     int ClasseO[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
     int ClasseU[80] ={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
-    int tuplaA[30] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-int comparadiscBleaching(int neuroletra[], int neuroalfabeto[], int n){
-    //Compara duas discriminantes
-    int i;
-    int contadorigualdade=0;
-    for(i=0;i<80;i++){
-        if(neuroletra[i]>0 && neuroalfabeto[i]>n){ //faz a comparação caso a discrimiante do usuário seja > 0 e a da base de dados seja > n (bleaching)
-            contadorigualdade++; 
-        }
-    }
-    return contadorigualdade;
-}
+	int tuplaA[30] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 
-int compareBleaching(int *neuroletrausuario){
-	//ve quais tem
-	int n = 0;
-	for(n=0;n<5;n++){
-	//vetor vet recebe o contadorIgualdade da função comparadiscbleaching 
-    vet[0]=comparadiscBleaching(neuroletrausuario, ClasseA, n);
-    vet[1]=comparadiscBleaching(neuroletrausuario, ClasseE, n);
-    vet[2]=comparadiscBleaching(neuroletrausuario, ClasseI, n);
-    vet[3]=comparadiscBleaching(neuroletrausuario, ClasseO, n);
-    vet[4]=comparadiscBleaching(neuroletrausuario, ClasseU, n);
-    
-    int maior2 = 0;
-    int letra2 = 0;
-    int aux = 0;
-	//pego o  maior valor e o indice do maior valor do vetor vet[]
-    for (int i = 0; i <  5; ++i) {            
-        if(vet[i] > maior2){
-            maior2 = vet[i];
-            letra2  = i;
-        }  
-  } 
-
-	//ordena o vetor vet[]
-
-      for(int i=0;i<5;i++){
-    		for(int j=i+1;j<5;j++){
-     			if(vet[i]>vet[j]){
-        		aux=vet[i];
-        		vet[i]=vet[j];
-        		vet[j]=aux;
-      }
-    }
-}	//se o ultimo valor for maior que o penultimo, ou seja, se existe UM valor maior sem empates significa que achamos o vencedor
-	if(vet[4] > vet[3]){
-		switch(letra2){//letra2 armazena a posição desse valor no vetor vet[] sendo 0 = 'A' e assim por diante
-   		case 0:
-   		printf("A letra vencedora A\n");
-   		return 0;
-   		break;
-   		case 1:
-   		printf("A letra vencedora E\n");
-   		return 0;
-   		break;
-   		case 2:
-   		printf("A letra vencedora I\n");
-   		return 0;
-   		break;
-   		case 3:
-   		printf("A letra vencedora O\n");
-   		return 0;
-   		break;
-   		case 4:
-   		printf("A letra vencedora U\n");
-   		return 0;
-   		break;
-   	}	
-	}else{
-	//caso tenha ocorrido algum empate (ex vetor empate: {1,2,3,4,4}) entre os 2 ultimos
+	int comparadiscBleaching(int neuroletra[], int neuroalfabeto[], int n){
+		//Compara duas discriminantes
+		int i;
+		int contadorigualdade=0;
+		for(i=0;i<80;i++){
+			if(neuroletra[i]>0 && neuroalfabeto[i]>n){ //faz a comparação caso a discrimiante do usuário seja > 0 
+				contadorigualdade++;				   //e a da base de dados seja > n (bleaching)
+			}
+		}
+		return contadorigualdade; 
+	}
 
 
-  int i=0, j,maior=0,letra[5] = {0},vencedora, contador = 0; 
-  aux = 0;
-  //inicializo maior com o valor do vet na posição zero e assim posso apagar a comparação inicial dentro do for
-  for (int i = 0; i < 5; ++i) {            
-        if(vet[i] == maior){ //se a posição atual for igual a Maior posição então letra recebe o indice de vet[]
-            letra[contador]  = i;
-            contador++;
-        }else if(vet[i] > maior){//caso a posição atual seja maior que a Maior ate então
-        	 Zera(letra, 5);//zero o vetor letra
-        	 letra[contador] = i;
-        	 maior  = vet[i];
-        	 contador++;
-        } 
-  }
-  int noZero = 0, posicaoNoZero = 0, tudoZero;
-  for (int i = 0; i < 5; ++i)
-   {
-   	if(letra[i] != 0){
-   		noZero++;
-   		posicaoNoZero = i;
+	int compareBleaching(int *neuroletrausuario){
+		
+		int n = 0;
+		for(n=0;n<5;n++){
+		//vetor vet recebe o contadorIgualdade da função comparadiscbleaching 
+		vet[0]=comparadiscBleaching(neuroletrausuario, ClasseA, n);
+		vet[1]=comparadiscBleaching(neuroletrausuario, ClasseE, n);
+		vet[2]=comparadiscBleaching(neuroletrausuario, ClasseI, n);
+		vet[3]=comparadiscBleaching(neuroletrausuario, ClasseO, n);
+		vet[4]=comparadiscBleaching(neuroletrausuario, ClasseU, n);
+		
+		int maior2 = 0;
+		int letra2 = 0;
+		int aux = 0;
+		//pego o  maior valor e o indice do maior valor do vetor vet[]
+		for (int i = 0; i <  5; ++i) {            
+			if(vet[i] > maior2){
+				maior2 = vet[i];
+				letra2  = i;
+			}  
+	} 
 
-   	}else if (letra[i] == 0){
-   		tudoZero++;
-   	}
-   } 
-   if(noZero == 1){
-   	
-   	switch(posicaoNoZero){
-   		case 0:
-   		printf("A letra vencedora A\n");
-   		return 0;
-   		break;
-   		case 1:
-   		printf("A letra vencedora E\n");
-   		return 0;
-   		break;
-   		case 2:
-   		printf("A letra vencedora I\n");
-   		return 0;
-   		break;
-   		case 3:
-   		printf("A letra vencedora O\n");
-   		return 0;
-   		break;
-   		case 4:
-   		printf("A letra vencedora U\n");
-   		return 0;
-   		break;
-   	}
+		//ordena o vetor vet[]
+		for(int i=0;i<5;i++){
+			for(int j=i+1;j<5;j++){
+				if(vet[i]>vet[j]){
+				aux=vet[i];
+				vet[i]=vet[j];
+				vet[j]=aux;
+			}
+		}
+	}	//se o ultimo valor for maior que o penultimo, ou seja, se existe UM valor maior sem empates significa que achamos o vencedor
+		if(vet[4] > vet[3]){
+			switch(letra2){//letra2 armazena a posição desse valor no vetor vet[] sendo 0 = 'A' e assim por diante
+			case 0:
+			printf("A letra vencedora A\n");
+			return 0;
+			break;
+			case 1:
+			printf("A letra vencedora E\n");
+			return 0;
+			break;
+			case 2:
+			printf("A letra vencedora I\n");
+			return 0;
+			break;
+			case 3:
+			printf("A letra vencedora O\n");
+			return 0;
+			break;
+			case 4:
+			printf("A letra vencedora U\n");
+			return 0;
+			break;
+		}	
+		}else{
+			//caso tenha ocorrido algum empate (ex vetor empate: {1,2,3,4,4}) entre os 2 ultimos
+			int i=0, j,maior=0,letra[5] = {0},vencedora, contador = 0; 
+			aux = 0;
+			//inicializo maior com o valor do vet na posição zero e assim posso apagar a comparação inicial dentro do for
+			for (int i = 0; i < 5; ++i) {            
+					if(vet[i] == maior){ //se a posição atual for igual a Maior posição então letra recebe o indice de vet[]
+						letra[contador]  = i;
+						contador++;
+					}else if(vet[i] > maior){//caso a posição atual seja maior que a Maior ate então
+						Zera(letra, 5);//zero o vetor letra
+						letra[contador] = i;
+						maior  = vet[i];
+						contador++;
+					} 
+			}
+			int noZero = 0, posicaoNoZero = 0, tudoZero;
+			for (int i = 0; i < 5; ++i)
+			{
+				if(letra[i] != 0){//adiciona a variavel noZero caso a posição seja != 0
+					noZero++;
+					posicaoNoZero = i;
 
-   }else if(tudoZero == 5){
-   	printf("Mesmo com bleaching nao fomos capazes de cheagar a um resultado");
-   	return 0;
-   }
-}
-}
+				}else if (letra[i] == 0){//adiciona a variavel tudoZero caso a posição seja == 0
+					tudoZero++;
+				}
+			} 
+			if(noZero == 1){// se houver apenas um valor diferente de zero no vetor letra2
+							// significa que temos o nosso vencedor
+
+				switch(posicaoNoZero){//verifica quem ganhou
+					case 0:
+					printf("A letra vencedora A\n");
+					return 0;
+					break;
+					case 1:
+					printf("A letra vencedora E\n");
+					return 0;
+					break;
+					case 2:
+					printf("A letra vencedora I\n");
+					return 0;
+					break;
+					case 3:
+					printf("A letra vencedora O\n");
+					return 0;
+					break;
+					case 4:
+					printf("A letra vencedora U\n");
+					return 0;
+					break;
+				}
+
+			}else if(tudoZero == 5){//se todos os valores forem  iguais a 0 então houve empate
+				printf("Mesmo com bleaching nao fomos capazes de cheagar a um resultado");
+				return 0;
+			}
+		}
+	}
 }
 void criaTudo(){
 	
