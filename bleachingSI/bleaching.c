@@ -75,10 +75,7 @@ int compareBleaching(int *neuroletrausuario){
     vet[2]=comparadiscBleaching(neuroletrausuario, ClasseI, n);
     vet[3]=comparadiscBleaching(neuroletrausuario, ClasseO, n);
     vet[4]=comparadiscBleaching(neuroletrausuario, ClasseU, n);
-    // for (int i = 0; i < 5; ++i)
-    // {
-    // 	printf("Vet %d es %d ||||||||| ->",i,vet[i]);
-    // }
+    
     int maior2 = 0;
     int letra2 = 0;
     int aux = 0;
@@ -152,7 +149,7 @@ int compareBleaching(int *neuroletrausuario){
    	}
    } 
    if(noZero == 1){
-   	printf("Parabéns meu bom, você venceu meu caro");
+   	
    	switch(posicaoNoZero){
    		case 0:
    		printf("A letra vencedora A\n");
