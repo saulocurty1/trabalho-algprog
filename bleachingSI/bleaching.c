@@ -58,7 +58,7 @@ int comparadiscBleaching(int neuroletra[], int neuroalfabeto[], int n){
     int i;
     int contadorigualdade=0;
     for(i=0;i<80;i++){
-        if(neuroletra[i]>0 && neuroalfabeto[i]>n){
+        if(neuroletra[i]>0 && neuroalfabeto[i]>n){ //faz a comparação caso a discrimiante do usuário seja > 0 e a da base de dados seja > n (bleaching)
             contadorigualdade++; 
         }
     }
@@ -70,6 +70,7 @@ int compareBleaching(int *neuroletrausuario){
 	//ve quais tem
 	int n = 0;
 	for(n=0;n<5;n++){
+	//vetor vet recebe o contadorIgualdade da função comparadiscbleaching 
     vet[0]=comparadiscBleaching(neuroletrausuario, ClasseA, n);
     vet[1]=comparadiscBleaching(neuroletrausuario, ClasseE, n);
     vet[2]=comparadiscBleaching(neuroletrausuario, ClasseI, n);
@@ -79,6 +80,7 @@ int compareBleaching(int *neuroletrausuario){
     int maior2 = 0;
     int letra2 = 0;
     int aux = 0;
+	//pego o  maior valor e o indice do maior valor do vetor vet[]
     for (int i = 0; i <  5; ++i) {            
         if(vet[i] > maior2){
             maior2 = vet[i];
@@ -86,18 +88,19 @@ int compareBleaching(int *neuroletrausuario){
         }  
   } 
 
+	//ordena o vetor vet[]
 
       for(int i=0;i<5;i++){
-    for(int j=i+1;j<5;j++){
-      if(vet[i]>vet[j]){
-        aux=vet[i];
-        vet[i]=vet[j];
-        vet[j]=aux;
+    		for(int j=i+1;j<5;j++){
+     			if(vet[i]>vet[j]){
+        		aux=vet[i];
+        		vet[i]=vet[j];
+        		vet[j]=aux;
       }
     }
-}	
+}	//se o ultimo valor for maior que o penultimo, ou seja, se existe UM valor maior sem empates significa que achamos o vencedor
 	if(vet[4] > vet[3]){
-		switch(letra2){
+		switch(letra2){//letra2 armazena a posição desse valor no vetor vet[] sendo 0 = 'A' e assim por diante
    		case 0:
    		printf("A letra vencedora A\n");
    		return 0;
@@ -120,18 +123,18 @@ int compareBleaching(int *neuroletrausuario){
    		break;
    	}	
 	}else{
+	//caso tenha ocorrido algum empate (ex vetor empate: {1,2,3,4,4}) entre os 2 ultimos
 
-   //ordenar o vet[i] para analisar se deu empate
+
   int i=0, j,maior=0,letra[5] = {0},vencedora, contador = 0; 
   aux = 0;
   //inicializo maior com o valor do vet na posição zero e assim posso apagar a comparação inicial dentro do for
   for (int i = 0; i < 5; ++i) {            
-        if(vet[i] == maior){
-            maior = vet[i]; //pode apagar?
+        if(vet[i] == maior){ //se a posição atual for igual a Maior posição então letra recebe o indice de vet[]
             letra[contador]  = i;
             contador++;
-        }else if(vet[i] > maior){
-        	 Zera(letra, 5);
+        }else if(vet[i] > maior){//caso a posição atual seja maior que a Maior ate então
+        	 Zera(letra, 5);//zero o vetor letra
         	 letra[contador] = i;
         	 maior  = vet[i];
         	 contador++;
@@ -333,7 +336,7 @@ int main(){
         for(i=0; i<30; i+=3){
             printf("(%i, %i, %i) ", tuplaA[i], tuplaA[i+1], tuplaA[i+2]);}}
 		
-	printf("\nCaso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa 500 linhas. ");
+	printf("\nCaso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa muitas linhas. ");
     scanf("%i", &testar);
     if(testar == 1){//avalia resposta do usuario
         printf("Discriminante da classe A:\n");
@@ -351,8 +354,8 @@ int contcont = 0;
 	
 printf("\n--------------------------------------------\n");
 while (menu!=9){
-	printf("Digite o numero correspondente a funcao desejada\nPara classificar uma letra[1]\nVisualizar as imagens mentais da base de dados[2]\n");
-    printf("Para sair da WiSARD[9] - [AVISO] Todo o progresso sera perdido\n");
+	printf(" - Digite o numero correspondente a funcao desejada\n - Para classificar uma letra[1]\n - Visualizar as imagens mentais da base de dados[2]\n");
+    printf(" - Para sair da WiSARD[9] - [AVISO] Todo o progresso sera perdido\n");
 	scanf("%d",&menu);
 
 	if (menu == 1){ //CLASSIFICAR UMA LETRA
