@@ -60,7 +60,7 @@ void CriaDiscriminante(int *neuronio, int *posicoes){
         a = posicoes[i];
         b = posicoes[i + 1];
         c = posicoes[i + 2];
-        //COnvertendo de binario pra decimal para pegar a posição do vetor
+        //Convertendo de binario pra decimal para pegar a posição do vetor
         valor  = (pow(2, 0) * c) + (pow(2, 1) * b) + (pow(2, 2) * a) + contador;  
         contador += 8;
         neuronio[valor]++;
@@ -80,7 +80,7 @@ int comparadisc(int neuroletra[], int neuroalfabeto[]){
 }
 
 void compare(int neuronioletra[], int classeA, int classeB, int classeC, int classeD, int classeE, int classeF, int classeG, int classeH, int classeI, int classeJ, int classeK, int classeL, int classeM, int classeN, int classeO, int classeP, int classeQ, int classeR, int classeS, int classeT, int classeU, int classeV, int classeW, int classeX, int classeY, int classeZ){
-    //Comapra uma letra com todas da base de dados
+    //Compara uma letra com todas da base de dados
     int vet[26];
     vet[0]=comparadisc(neuronioletra,classeA);
     vet[1]=comparadisc(neuronioletra,classeB);
@@ -110,7 +110,7 @@ void compare(int neuronioletra[], int classeA, int classeB, int classeC, int cla
     vet[25]=comparadisc(neuronioletra,classeZ);
   
     int i=0, j,maior=0,aux,letra=25,vencedora; 
-    //inicializo maior com o valor do vet na posição zero e assim posso apagar a comparação inicial dentro do for
+    //Inicializo maior com o valor do vet na posição zero e assim posso apagar a comparação inicial dentro do for
     for (int i = 0; i <  26; ++i) {            
         if(vet[i] > maior){
             maior = vet[i];
@@ -126,12 +126,12 @@ void compare(int neuronioletra[], int classeA, int classeB, int classeC, int cla
             vet[j]=aux;
         }
         }
-    }//se tiver um numero maior ele vai ser printado
+    }//Se tiver um numero maior ele vai ser printado
 
     if(vet[25]>vet[24]){
         vencedora=65+letra;
         printf("\nA letra pertence a classe %c\n",vencedora);
-    }//em caso de empate avisa que nao foi possivel determinar
+    }//Em caso de empate avisa que nao foi possivel determinar
     if(vet[25]==vet[24]){
         printf("\nNao foi possivel determinar a classe\n");
     }
@@ -139,6 +139,7 @@ void compare(int neuronioletra[], int classeA, int classeB, int classeC, int cla
 
 void exibirImagemMental(int *letra){
     int i;
+    //Exibi a imagem mental da matriz desejada
     for(i = 0; i<30; i+=5){
         printf("%i %i %i %i %i\n",letra[i], letra[i+1], letra[i+2], letra[i+3],letra[i+4]);
     }
@@ -146,6 +147,7 @@ void exibirImagemMental(int *letra){
 
 void exibeDiscriminante(int *discriminante){
     int i;
+    //Exibi o discrimante da matriz desejada
     for(i=0; i<80; i+=8){
         printf("%i %i %i %i %i %i %i %i\n", discriminante[i],discriminante[i+1],discriminante[i+2],discriminante[i+3],discriminante[i+4],discriminante[i+5],discriminante[i+6],discriminante[i+7]);
     }
@@ -153,6 +155,7 @@ void exibeDiscriminante(int *discriminante){
 
 void somaMatrizes(int *matrizA, int *matrizB, int tamanho){
     int i;
+    //Soma entre duas matrizes
     for(i=0; i<tamanho; i++){
         matrizA[i] += matrizB[i];
     }
