@@ -89,7 +89,7 @@
     void criaTodosDiscriminantes(int *tuplas);
 
 int main(){
-    printf("***Bem-vindo(a) a WiSARD!***\n");
+    printf("\n\n***Bem-vindo(a) a WiSARD!***\n\n");
 
     int i, j;
     int testar, menu;
@@ -98,7 +98,7 @@ int main(){
     //Criando as tuplas
     int tuplas[30];
     geraTuplas(tuplas, 30);
-    printf("Caso queira visualizar a ordem das coordenadas selecionadas para a formacao das tuplas digite '1'. ");
+    printf("[Debug] - Caso queira visualizar a ordem das coordenadas selecionadas para a formacao das tuplas digite '1'. ");
     scanf("%i", &testar);
     if(testar == 1){
         for(i=0; i<30; i+=3){
@@ -106,7 +106,7 @@ int main(){
 
     //Criando o discriminante das letras da base de dados
     criaTodosDiscriminantes(tuplas);
-    printf("\nCaso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa 500 linhas. ");
+    printf("\n\n[Debug] - Caso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa 500 linhas. ");
     scanf("%i", &testar);
     if(testar == 1){
         printf("Discriminante da classe A:\n");
@@ -165,7 +165,7 @@ int main(){
 
     //Menu do usuário
     while(menu != 9){
-    printf("Digite o numero correspondente a funcao desejada\nPara classificar uma letra[1]\nVisualizar as imagens mentais da base de dados[2]\n");
+    printf("\n\nDigite o numero correspondente a funcao desejada\nPara classificar uma letra[1]\nVisualizar as imagens mentais da base de dados[2]\n");
     printf("Para sair da WiSARD[9] - [AVISO] Todo o progresso sera perdido\n");
     scanf("%i", &menu);
     if(menu == 1){ //CLASSIFICAR UMA LETRA
@@ -182,7 +182,7 @@ int main(){
         int posicoes[30];
         //Atribuindo valores binários as posições das tuplas da letra do usuário
         posicaoNeuronios(tuplas, matrizUsuario, posicoes, 30);
-        printf("Caso queira visualizar os valores binarios atribuidos as tuplas digite '1'. ");
+        printf("\n\n[Debug] - Caso queira visualizar os valores binarios atribuidos as tuplas digite '1'. ");
         scanf("%i", &testar);
         if(testar == 1){
             for(i=0; i<30; i+=3){
@@ -192,7 +192,7 @@ int main(){
         int discriminanteLetraUsuario[80];
         //Limpando a memória
         Zera(discriminanteLetraUsuario);
-        printf("\nCaso queira conferir se o discriminante foi realmente zerado digite 1. ");
+        printf("\n\n[Debug] - Caso queira conferir se o discriminante foi realmente zerado digite 1. ");
         scanf("%i", &testar);
         if(testar == 1){
             printf("Discriminante zerado:\n");
@@ -200,7 +200,7 @@ int main(){
 
         //Propriamente criando a discriminante do usuario
         CriaDiscriminante(discriminanteLetraUsuario, posicoes);
-        printf("Caso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
+        printf("\n\n[Debug] - Caso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
         scanf("%i", &testar);
         if(testar == 1){
             printf("Discriminante do usuario:\n");
@@ -208,7 +208,7 @@ int main(){
 
         //Comparando a letra do usuário com as letras treinados e exibindo o resultado 
         compare(discriminanteLetraUsuario, classeA, classeB, classeC, classeD,classeE, classeF, classeG, classeH, classeI, classeJ, classeK, classeL, classeM, classeN, classeO, classeP, classeQ, classeR, classeS, classeT, classeU, classeV, classeW, classeX, classeY, classeZ);
-        printf("Caso queira visualizar o valor de igualdade entre a letra digitada e cada uma das letras possiveis digite 1. ");
+        printf("\n\n[Debug] - Caso queira visualizar o valor de igualdade entre a letra digitada e cada uma das letras possiveis digite 1. ");
         scanf("%i", &testar);
             if(testar == 1){
                 printf("Igualdade com a letra A: %i\n", comparadisc(discriminanteLetraUsuario, classeA));
@@ -239,7 +239,7 @@ int main(){
                 printf("Igualdade com a letra Z: %i\n", comparadisc(discriminanteLetraUsuario, classeZ));
                 }
                 int decisao;
-                printf("Caso queira visualizar a imagem mental da sua letra digite '1' ");
+                printf("\n\nCaso queira visualizar a imagem mental da sua letra digite '1' ");
                 scanf("%i", &decisao);
                 if(decisao == 1)
                     exibirImagemMental(matrizUsuario);
