@@ -139,7 +139,7 @@ void compare(int neuronioletra[], int classeA, int classeB, int classeC, int cla
 
 void exibirImagemMental(int *letra){
     int i;
-    //Exibi a imagem mental da matriz desejada
+    //Exibe a imagem mental da matriz desejada
     for(i = 0; i<30; i+=5){
         printf("%i %i %i %i %i\n",letra[i], letra[i+1], letra[i+2], letra[i+3],letra[i+4]);
     }
@@ -147,7 +147,7 @@ void exibirImagemMental(int *letra){
 
 void exibeDiscriminante(int *discriminante){
     int i;
-    //Exibi o discrimante da matriz desejada
+    //Exibe o discrimante da matriz desejada
     for(i=0; i<80; i+=8){
         printf("%i %i %i %i %i %i %i %i\n", discriminante[i],discriminante[i+1],discriminante[i+2],discriminante[i+3],discriminante[i+4],discriminante[i+5],discriminante[i+6],discriminante[i+7]);
     }
