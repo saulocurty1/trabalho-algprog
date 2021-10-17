@@ -56,11 +56,11 @@
 
 
 	int comparadiscBleaching(int neuroletra[], int neuroalfabeto[], int n){
-		//Compara duas discriminantes
+		//Compara duas discriminadores
 		int i;
 		int contadorigualdade=0;
 		for(i=0;i<80;i++){
-			if(neuroletra[i]>0 && neuroalfabeto[i]>n){ //faz a comparação caso a discrimiante do usuário seja > 0 
+			if(neuroletra[i]>0 && neuroalfabeto[i]>n){ //faz a comparação caso a discriminador do usuário seja > 0 
 				contadorigualdade++;				   //e a da base de dados seja > n (bleaching)
 			}
 		}
@@ -189,106 +189,106 @@ void criaTudo(){
 
 
 	posicaoNeuronios(tuplaA, matrizA1, posicoesA, 30);
-	CriaDiscriminante(ClasseA, posicoesA);
+	CriaDiscriminador(ClasseA, posicoesA);
 	//Zera
 
 
 	
 	posicaoNeuronios(tuplaA, matrizA2, posicoesA, 30);
-	CriaDiscriminante(ClasseA, posicoesA);
+	CriaDiscriminador(ClasseA, posicoesA);
 
 	
 	posicaoNeuronios(tuplaA, matrizA3, posicoesA, 30);
-	CriaDiscriminante(ClasseA, posicoesA);
+	CriaDiscriminador(ClasseA, posicoesA);
 
 	
 	posicaoNeuronios(tuplaA, matrizA4, posicoesA, 30);
-	CriaDiscriminante(ClasseA, posicoesA);
+	CriaDiscriminador(ClasseA, posicoesA);
 
 	
 	posicaoNeuronios(tuplaA, matrizA5, posicoesA, 30);
-	CriaDiscriminante(ClasseA, posicoesA);
+	CriaDiscriminador(ClasseA, posicoesA);
 
 	//E
 
 	posicaoNeuronios(tuplaA, matrizE1, posicoesE, 30);
-	CriaDiscriminante(ClasseE, posicoesE);
+	CriaDiscriminador(ClasseE, posicoesE);
 
 	
 	posicaoNeuronios(tuplaA, matrizE2, posicoesE, 30);
-	CriaDiscriminante(ClasseE, posicoesE);
+	CriaDiscriminador(ClasseE, posicoesE);
 
 	
 	posicaoNeuronios(tuplaA, matrizE3, posicoesE, 30);
-	CriaDiscriminante(ClasseE, posicoesE);
+	CriaDiscriminador(ClasseE, posicoesE);
 
 	
 	posicaoNeuronios(tuplaA, matrizE4, posicoesE, 30);
-	CriaDiscriminante(ClasseE, posicoesE);
+	CriaDiscriminador(ClasseE, posicoesE);
 
 	
 	posicaoNeuronios(tuplaA, matrizE5, posicoesE, 30);
-	CriaDiscriminante(ClasseE, posicoesE);
+	CriaDiscriminador(ClasseE, posicoesE);
 	//I
 
 	posicaoNeuronios(tuplaA, matrizI1, posicoesI, 30);
-	CriaDiscriminante(ClasseI, posicoesI);
+	CriaDiscriminador(ClasseI, posicoesI);
 
 	
 	posicaoNeuronios(tuplaA, matrizI2, posicoesI, 30);
-	CriaDiscriminante(ClasseI, posicoesI);
+	CriaDiscriminador(ClasseI, posicoesI);
 
 	
 	posicaoNeuronios(tuplaA, matrizI3, posicoesI, 30);
-	CriaDiscriminante(ClasseI, posicoesI);
+	CriaDiscriminador(ClasseI, posicoesI);
 
 	
 	posicaoNeuronios(tuplaA, matrizI4, posicoesI, 30);
-	CriaDiscriminante(ClasseI, posicoesI);
+	CriaDiscriminador(ClasseI, posicoesI);
 
 	
 	posicaoNeuronios(tuplaA, matrizI5, posicoesI, 30);
-	CriaDiscriminante(ClasseI, posicoesI);
+	CriaDiscriminador(ClasseI, posicoesI);
 	//O
 
 	posicaoNeuronios(tuplaA, matrizO1, posicoesO, 30);
-	CriaDiscriminante(ClasseO, posicoesO);
+	CriaDiscriminador(ClasseO, posicoesO);
 
 	
 	posicaoNeuronios(tuplaA, matrizO2, posicoesO, 30);
-	CriaDiscriminante(ClasseO, posicoesO);
+	CriaDiscriminador(ClasseO, posicoesO);
 
 	
 	posicaoNeuronios(tuplaA, matrizO3, posicoesO, 30);
-	CriaDiscriminante(ClasseO, posicoesO);
+	CriaDiscriminador(ClasseO, posicoesO);
 
 	
 	posicaoNeuronios(tuplaA, matrizO4, posicoesO, 30);
-	CriaDiscriminante(ClasseO, posicoesO);
+	CriaDiscriminador(ClasseO, posicoesO);
 
 	
 	posicaoNeuronios(tuplaA, matrizO5, posicoesO, 30);
-	CriaDiscriminante(ClasseO, posicoesO);
+	CriaDiscriminador(ClasseO, posicoesO);
 	//U
 
 	posicaoNeuronios(tuplaA, matrizU1, posicoesU, 30);
-	CriaDiscriminante(ClasseU, posicoesU);
+	CriaDiscriminador(ClasseU, posicoesU);
 
 	
 	posicaoNeuronios(tuplaA, matrizU2, posicoesU, 30);
-	CriaDiscriminante(ClasseU, posicoesU);
+	CriaDiscriminador(ClasseU, posicoesU);
 
 	
 	posicaoNeuronios(tuplaA, matrizU3, posicoesU, 30);
-	CriaDiscriminante(ClasseU, posicoesU);
+	CriaDiscriminador(ClasseU, posicoesU);
 
 	
 	posicaoNeuronios(tuplaA, matrizU4, posicoesU, 30);
-	CriaDiscriminante(ClasseU, posicoesU);
+	CriaDiscriminador(ClasseU, posicoesU);
 
 	
 	posicaoNeuronios(tuplaA, matrizU5, posicoesU, 30);
-	CriaDiscriminante(ClasseU, posicoesU);
+	CriaDiscriminador(ClasseU, posicoesU);
 
 }
 int main(){
@@ -325,7 +325,7 @@ int main(){
 	somaMatrizes(matrizSU,matrizU5,30);
 	int testar, menu, i, j;
 
-	//Criando o discriminante das letras da base de dados
+	//Criando o discriminador das letras da base de dados
 	criaTudo(); 
 
 	printf("***Bem-vindo(a) a WiSARD!***\n");
@@ -336,19 +336,19 @@ int main(){
         for(i=0; i<30; i+=3){
             printf("(%i, %i, %i) ", tuplaA[i], tuplaA[i+1], tuplaA[i+2]);}}
 		
-	printf("\nCaso queira visualizar o discriminante de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminantes ocupa muitas linhas. ");
+	printf("\nCaso queira visualizar o discriminador de todas as letras da base de dados digite '1'\n[AVISO] A exibicao dos discriminadors ocupa muitas linhas. ");
     scanf("%i", &testar);
     if(testar == 1){//avalia resposta do usuario
-        printf("Discriminante da classe A:\n");
-        exibeDiscriminante(ClasseA);
-        printf("Discriminante da classe E:\n");
-        exibeDiscriminante(ClasseE);
-        printf("Discriminante da classe I:\n");
-        exibeDiscriminante(ClasseI);
-        printf("Discriminante da classe O:\n");
-        exibeDiscriminante(ClasseO);
-        printf("Discriminante da classe U:\n");
-        exibeDiscriminante(ClasseU);
+        printf("Discriminador da classe A:\n");
+        exibeDiscriminador(ClasseA);
+        printf("Discriminador da classe E:\n");
+        exibeDiscriminador(ClasseE);
+        printf("Discriminador da classe I:\n");
+        exibeDiscriminador(ClasseI);
+        printf("Discriminador da classe O:\n");
+        exibeDiscriminador(ClasseO);
+        printf("Discriminador da classe U:\n");
+        exibeDiscriminador(ClasseU);
 	}
 int contcont = 0;
 	
@@ -368,7 +368,7 @@ while (menu!=9){
 		}
 		posicaoNeuronios(tuplaA, discu, posicu, 30);
 		Zera(classu, 80);
-		CriaDiscriminante(classu, posicu);
+		CriaDiscriminador(classu, posicu);
 
 		//Posicionando os neurônios, para isso cria-se um vetor de posições vazio
 		int posicoes[30];
@@ -381,12 +381,12 @@ while (menu!=9){
             for(i=0; i<30; i+=3){
                 printf("(%i, %i, %i) ", posicoes[i], posicoes[i+1], posicoes[i+2]);}}
 
-		//Propriamente criando a discriminante do usuario
+		//Propriamente criando o discriminador do usuario
 		printf("\nCaso queira visualizar o discrminante correspondente a letra digitada pelo usuario digite 1. ");
         scanf("%i", &testar);
         if(testar == 1){
-            printf("Discriminante do usuario:\n");
-            exibeDiscriminante(classu);} 
+            printf("Discriminador do usuario:\n");
+            exibeDiscriminador(classu);} 
 
 		//Comparando a letra do usuário com as letras treinados e exibindo o resultado
 		compareBleaching(classu);
@@ -415,34 +415,34 @@ while (menu!=9){
 			getchar();
 			scanf("%c", &letra);
 			if(letra == 'a' || letra == 'A'){
-                CriaDiscriminante(ClasseA, posicoes);
+                CriaDiscriminador(ClasseA, posicoes);
                 somaMatrizes(matrizSA,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseA);
+                printf("\nLetra %c atualizada!\nNovo Discriminador:\n", letra);
+                exibeDiscriminador(ClasseA);
             }
             if(letra == 'e' || letra == 'E'){
-                CriaDiscriminante(ClasseE, posicoes);
+                CriaDiscriminador(ClasseE, posicoes);
                 somaMatrizes(matrizSE,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseE);
+                printf("\nLetra %c atualizada!\nNovo Discriminador:\n", letra);
+                exibeDiscriminador(ClasseE);
             }
             if(letra == 'i' || letra == 'I'){
-                CriaDiscriminante(ClasseI, posicoes);
+                CriaDiscriminador(ClasseI, posicoes);
                 somaMatrizes(matrizSI,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseI);
+                printf("\nLetra %c atualizada!\nNovo Discriminador:\n", letra);
+                exibeDiscriminador(ClasseI);
             }
             if(letra == 'o' || letra == 'O'){
-                CriaDiscriminante(ClasseO, posicoes);
+                CriaDiscriminador(ClasseO, posicoes);
                 somaMatrizes(matrizSO,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseO);
+                printf("\nLetra %c atualizada!\nNovo Discriminador:\n", letra);
+                exibeDiscriminador(ClasseO);
             }
             if(letra == 'u' || letra == 'U'){
-                CriaDiscriminante(ClasseE, posicoes);
+                CriaDiscriminador(ClasseE, posicoes);
                 somaMatrizes(matrizSU,discu,30);
-                printf("\nLetra %c atualizada!\nNovo Discriminante:\n", letra);
-                exibeDiscriminante(ClasseU);
+                printf("\nLetra %c atualizada!\nNovo Discriminador:\n", letra);
+                exibeDiscriminador(ClasseU);
             }
 		}
 	}if(menu == 2){//Imagens mentais da base de dados

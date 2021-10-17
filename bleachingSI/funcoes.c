@@ -21,10 +21,10 @@ void exibirImagemMental(int *letra){
     }
 }
 
-void exibeDiscriminante(int *discriminante){
+void exibeDiscriminador(int *discriminador){
     int i;
     for(i=0; i<80; i+=8){
-        printf("%i %i %i %i %i %i %i %i\n", discriminante[i],discriminante[i+1],discriminante[i+2],discriminante[i+3],discriminante[i+4],discriminante[i+5],discriminante[i+6],discriminante[i+7]);
+        printf("%i %i %i %i %i %i %i %i\n", discriminador[i],discriminador[i+1],discriminador[i+2],discriminador[i+3],discriminador[i+4],discriminador[i+5],discriminador[i+6],discriminador[i+7]);
     }
 }    
 
@@ -78,7 +78,7 @@ void Zera(int *ma, int tamanho){
     }
 }
 
-void CriaDiscriminante(int *neuronio, int *posicoes){
+void CriaDiscriminador(int *neuronio, int *posicoes){
     int contador = 0;
     int a, b, c = 0;
     int valor = 0;
@@ -94,7 +94,7 @@ void CriaDiscriminante(int *neuronio, int *posicoes){
 }
 
 int comparadisc(int neuroletra[], int neuroalfabeto[]){
-    //Compara duas discriminantes
+    //Compara dois discriminadores
     int i;
     int contadorigualdade=0;
     for(i=0;i<80;i++){
